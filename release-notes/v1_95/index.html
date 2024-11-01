@@ -1,0 +1,2585 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mtkn1.github.io/vscode-docs-ja/release-notes/v1_95/">
+      
+      
+        <link rel="prev" href="../v1_94/">
+      
+      
+      
+      <link rel="icon" href="../../images/logo-stable.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>2024 年 10 月 (バージョン 1.95) - vscode-docs-ja</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="2024 年 10 月 (バージョン 1.95) - vscode-docs-ja" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://mtkn1.github.io/vscode-docs-ja/assets/images/social/release-notes/v1_95.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://mtkn1.github.io/vscode-docs-ja/release-notes/v1_95/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="2024 年 10 月 (バージョン 1.95) - vscode-docs-ja" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://mtkn1.github.io/vscode-docs-ja/assets/images/social/release-notes/v1_95.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2024-10-195" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="vscode-docs-ja" class="md-header__button md-logo" aria-label="vscode-docs-ja" data-md-component="logo">
+      
+  <img src="../../images/logo-stable.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            vscode-docs-ja
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2024 年 10 月 (バージョン 1.95)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MtkN1/vscode-docs-ja" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MtkN1/vscode-docs-ja
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  vscode-docs-ja
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../v1_94/" class="md-tabs__link">
+          
+  
+  Release notes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="vscode-docs-ja" class="md-nav__button md-logo" aria-label="vscode-docs-ja" data-md-component="logo">
+      
+  <img src="../../images/logo-stable.png" alt="logo">
+
+    </a>
+    vscode-docs-ja
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MtkN1/vscode-docs-ja" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MtkN1/vscode-docs-ja
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vscode-docs-ja
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Release notes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Release notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v1_94/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024 年 9 月 (バージョン 1.94)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2024 年 10 月 (バージョン 1.95)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2024 年 10 月 (バージョン 1.95)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Copilot
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Copilot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-a-code-editing-session-with-copilot-edits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot Edits でコード編集セッションを開始する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat-in-the-secondary-side-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      セカンダリ サイドバーのチャット
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot-code-reviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot コード レビュー
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャット参加者の自動検出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      現在のエディター コンテキストを制御する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      インタラクティブなワークスペース シンボル リンク
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      問題ホバーで Copilot アクションを使用して修正する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ワークスペースのインデックス作成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャットのフォローアップの改善
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      セマンティック検索で関連性で並べ替え (実験的)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ワークベンチ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ワークベンチ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiple-github-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      複数の GitHub アカウント
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-additional-accounts-when-changing-account-preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      アカウント優先設定を変更する際に追加のアカウントを追加する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings-editor-indicator-for-experimental-and-preview-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定エディターの実験的およびプレビュー設定のインジケーター
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      プロファイルのアイコンを追加
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      パネルのビュー アイコン
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      エディター
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エディター">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      出現のハイライト遅延
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web 用 VS Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web 用 VS Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-vs-code_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web 用 VS Code はローカル ファイル イベントをサポートします
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      拡張機能への貢献
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拡張機能への貢献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copilot-extensions-showcase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot 拡張機能の紹介
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copilot 拡張機能の紹介">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub プル リクエスト
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub プル リクエスト">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copilot_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot を使用した問題検索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot を使用した要約と修正
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot を使用した通知の優先順位付け (実験的)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot 用 Web 検索
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copilot 用 Web 検索">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      説明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャット参加者
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャット ツール
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot を使用した MermAId 図の生成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copilot を使用した MermAId 図の生成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      図の作成とレンダリング
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mermaid ビジュアル アウトライン ビュー
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャット ツール
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot 用データ分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copilot 用データ分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      データ分析と視覚化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      データ分析を実行するために使用されるコードのエクスポート
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV ファイルのエディターおよびエクスプローラー統合
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      VS Code コマンダー拡張機能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot プレビュー拡張機能のビジョン
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copilot プレビュー拡張機能のビジョン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャットでのビジョン
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      クイック修正を使用したビジョン
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repl" class="md-nav__link">
+    <span class="md-ellipsis">
+      ネイティブ REPL 変数ビュー
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-docstrings-with-pylance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pylance を使用してドックストリングを生成する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      すべてのドックストリングを折りたたむ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      インポート提案の改善
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      実験的な AI コード アクション: 抽象クラスの実装
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      拡張機能の作成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拡張機能の作成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      言語モデルのツール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャット参加者の検出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-code-speech" class="md-nav__link">
+    <span class="md-ellipsis">
+      VS Code Speech
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapsiblestate" class="md-nav__link">
+    <span class="md-ellipsis">
+      コメント スレッド collapsibleState
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codicons" class="md-nav__link">
+    <span class="md-ellipsis">
+      ウェルカム ビューでの Codicons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      モデル ピッカーへのチャット参加者アクセス
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      プレビュー機能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プレビュー機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typescript-57" class="md-nav__link">
+    <span class="md-ellipsis">
+      TypeScript 5.7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript-typescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript および TypeScript の貼り付け時のインポートの更新
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      提案された API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="提案された API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像添付のためのチャット参照バイナリ データ
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      エンジニアリング
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エンジニアリング">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM 用のプロンプト作成ライブラリ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-amd-esm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web での AMD コードの削除と ESM の使用の拡大
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eslint-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESLint 9 への移行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electron-32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electron 32 の更新
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      注目の修正
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      ありがとう
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ありがとう">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      問題追跡
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      プルリクエスト
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Copilot
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Copilot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-a-code-editing-session-with-copilot-edits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot Edits でコード編集セッションを開始する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat-in-the-secondary-side-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      セカンダリ サイドバーのチャット
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot-code-reviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot コード レビュー
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャット参加者の自動検出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      現在のエディター コンテキストを制御する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      インタラクティブなワークスペース シンボル リンク
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      問題ホバーで Copilot アクションを使用して修正する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ワークスペースのインデックス作成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャットのフォローアップの改善
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      セマンティック検索で関連性で並べ替え (実験的)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ワークベンチ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ワークベンチ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiple-github-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      複数の GitHub アカウント
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-additional-accounts-when-changing-account-preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      アカウント優先設定を変更する際に追加のアカウントを追加する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings-editor-indicator-for-experimental-and-preview-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定エディターの実験的およびプレビュー設定のインジケーター
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      プロファイルのアイコンを追加
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      パネルのビュー アイコン
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      エディター
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エディター">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      出現のハイライト遅延
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web 用 VS Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web 用 VS Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-vs-code_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web 用 VS Code はローカル ファイル イベントをサポートします
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      拡張機能への貢献
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拡張機能への貢献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copilot-extensions-showcase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot 拡張機能の紹介
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copilot 拡張機能の紹介">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub プル リクエスト
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub プル リクエスト">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copilot_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot を使用した問題検索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot を使用した要約と修正
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot を使用した通知の優先順位付け (実験的)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot 用 Web 検索
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copilot 用 Web 検索">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      説明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャット参加者
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャット ツール
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot-mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot を使用した MermAId 図の生成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copilot を使用した MermAId 図の生成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      図の作成とレンダリング
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mermaid ビジュアル アウトライン ビュー
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャット ツール
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot 用データ分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copilot 用データ分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      データ分析と視覚化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      データ分析を実行するために使用されるコードのエクスポート
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSV ファイルのエディターおよびエクスプローラー統合
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      VS Code コマンダー拡張機能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copilot_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot プレビュー拡張機能のビジョン
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Copilot プレビュー拡張機能のビジョン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャットでのビジョン
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      クイック修正を使用したビジョン
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repl" class="md-nav__link">
+    <span class="md-ellipsis">
+      ネイティブ REPL 変数ビュー
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-docstrings-with-pylance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pylance を使用してドックストリングを生成する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      すべてのドックストリングを折りたたむ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      インポート提案の改善
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      実験的な AI コード アクション: 抽象クラスの実装
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      拡張機能の作成
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拡張機能の作成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      言語モデルのツール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャット参加者の検出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-code-speech" class="md-nav__link">
+    <span class="md-ellipsis">
+      VS Code Speech
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapsiblestate" class="md-nav__link">
+    <span class="md-ellipsis">
+      コメント スレッド collapsibleState
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codicons" class="md-nav__link">
+    <span class="md-ellipsis">
+      ウェルカム ビューでの Codicons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      モデル ピッカーへのチャット参加者アクセス
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      プレビュー機能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プレビュー機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typescript-57" class="md-nav__link">
+    <span class="md-ellipsis">
+      TypeScript 5.7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript-typescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript および TypeScript の貼り付け時のインポートの更新
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      提案された API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="提案された API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      画像添付のためのチャット参照バイナリ データ
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      エンジニアリング
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エンジニアリング">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM 用のプロンプト作成ライブラリ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-amd-esm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web での AMD コードの削除と ESM の使用の拡大
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eslint-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESLint 9 への移行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electron-32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electron 32 の更新
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      注目の修正
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      ありがとう
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ありがとう">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      問題追跡
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      プルリクエスト
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/MtkN1/vscode-docs-ja/edit/main/docs/release-notes/v1_95.md" title="編集" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/MtkN1/vscode-docs-ja/raw/main/docs/release-notes/v1_95.md" title="このページの原文を表示" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="2024-10-195">2024 年 10 月 (バージョン 1.95)<a class="headerlink" href="#2024-10-195" title="Permanent link">&para;</a></h1>
+<p><strong>アップデート 1.95.1</strong>: このアップデートはこれらの <a href="https://github.com/microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22October+2024+Recovery+1%22+is%3Aclosed">問題</a> に対処します。</p>
+<!-- DOWNLOAD_LINKS_PLACEHOLDER -->
+
+<hr />
+<p>Visual Studio Code の 2024 年 10 月リリースへようこそ。このバージョンには多くの更新が含まれており、いくつかの主要なハイライトは次のとおりです:</p>
+<ul>
+<li><a href="#start-a-code-editing-session-with-copilot-edits">Copilot Edits</a> - 複数のファイルにわたる大規模な変更を迅速に反復処理します</li>
+<li><a href="#chat-in-the-secondary-side-bar">セカンダリ サイドバーの Copilot チャット</a> - 作業中に Copilot チャットを開いてすぐに使用できるようにします</li>
+<li><a href="#multiple-github-accounts">複数の GitHub アカウント</a> - VS Code で複数の GitHub アカウントに同時にログインします</li>
+<li><a href="#copilot-code-reviews">Copilot コード レビュー</a> - コミットされていない変更のクイック レビュー パスまたは詳細なレビューを取得します</li>
+<li><a href="#generate-docstrings-with-pylance">Pylance を使用したドックストリング</a> - クラスまたはメソッドのドックストリング テンプレートを生成します</li>
+<li><a href="#settings-editor-indicator-for-experimental-and-preview-settings">プレビュー設定インジケーター</a> - 設定エディターで実験的およびプレビュー設定を表示します</li>
+<li><a href="#copilot-extensions-showcase">Copilot 拡張機能</a> - VS Code での Copilot 拡張機能を紹介します</li>
+</ul>
+<blockquote>
+<p>これらのリリース ノートをオンラインで読みたい場合は、<a href="https://code.visualstudio.com">code.visualstudio.com</a> の <a href="https://code.visualstudio.com/updates">更新プログラム</a> にアクセスしてください。
+<strong>Insiders:</strong> できるだけ早く新機能を試してみたいですか? ナイトリー <a href="https://code.visualstudio.com/insiders">Insiders</a> ビルドをダウンロードして、最新の更新プログラムをすぐに試すことができます。</p>
+</blockquote>
+<h2 id="github-copilot">GitHub Copilot<a class="headerlink" href="#github-copilot" title="Permanent link">&para;</a></h2>
+<p>Copilot 機能は、通常、設定を通じて有効化および構成されるさまざまな早期アクセス段階を経ることがあります。</p>
+<ul>
+<li><strong>実験的</strong> - <a href="command:workbench.action.openSettings?%5B%22%40tag%3Aexperimental%20%40ext%3Agithub.copilot-chat%22%5D">実験的機能</a> (<code>@tag:experimental</code>) を表示します</li>
+</ul>
+<p>この設定は、積極的に開発されており、不安定な可能性がある新機能を制御します。変更または削除される可能性があります。</p>
+<ul>
+<li><strong>プレビュー</strong> - <a href="command:workbench.action.openSettings?%5B%22%40tag%3Apreview%20%40ext%3Agithub.copilot-chat%22%5D">プレビュー機能</a> (<code>@tag:preview</code>) を表示します</li>
+</ul>
+<p>この設定は、まだ改良中ですが、使用する準備ができている新機能を制御します。フィードバックを歓迎します。</p>
+<h3 id="start-a-code-editing-session-with-copilot-edits">Copilot Edits でコード編集セッションを開始する<a class="headerlink" href="#start-a-code-editing-session-with-copilot-edits" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Copilot Edits は現在プレビュー中です</p>
+</blockquote>
+<p><strong>設定</strong>: <code>setting(github.copilot.chat.edits.enabled)</code></p>
+<p>Copilot Edits を使用すると、AI を活用したコード編集セッションを開始して、コード変更を迅速に反復処理できます。プロンプトに基づいて、Copilot Edits はワークスペース内の複数のファイルにわたるコード変更を提案します。これらの編集はエディターに直接適用されるため、周囲のコードの完全なコンテキストでインプレースで迅速にレビューできます。</p>
+<p>Copilot Edits は、複数のファイルにわたる大規模な変更を反復処理するのに最適です。Copilot チャットの会話の流れとインライン チャットからの迅速なフィードバックを 1 つのエクスペリエンスにまとめます。サイドで進行中の複数ターンのチャット会話を行いながら、インライン コードの提案を活用できます。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/copilot-edits-hero.mp4" title="Copilot Edits を使用して Express アプリを変更します。" autoplay loop controls muted></video>
+
+<p>Copilot Edits を使用して開始するには、次の 3 つの手順を実行します:</p>
+<ol>
+<li>
+<p>チャット メニューから <strong>Copilot Edits を開く</strong> を選択するか、<code>kb(workbench.action.chat.openEditSession)</code> を押して編集セッションを開始します。</p>
+<p><img alt="コマンド センターの Copilot メニューを示すスクリーンショットで、編集セッションを開く項目を強調表示しています" src="https://code.visualstudio.com/assets/updates/1_95/copilot-command-center-open-edit-session.png" /></p>
+</li>
+<li>
+<p>関連するファイルを <em>作業セット</em> に追加して、Copilot に作業するファイルを示します。</p>
+</li>
+<li>
+<p>プロンプトを入力して、行いたい編集について Copilot に伝えます。たとえば、<code>すべてのページにシンプルなナビゲーション バーを追加する</code> または <code>jest の代わりに vitest を使用する</code> などです。</p>
+</li>
+</ol>
+<p>ドキュメントで <a href="https://code.visualstudio.com/docs/copilot/copilot-edits">Copilot Edits</a> の詳細を確認してください。今すぐ試して、<a href="https://github.com/microsoft/vscode-copilot-release/issues">問題</a> を通じてフィードバックを提供してください。</p>
+<h3 id="chat-in-the-secondary-side-bar">セカンダリ サイドバーのチャット<a class="headerlink" href="#chat-in-the-secondary-side-bar" title="Permanent link">&para;</a></h3>
+<p>チャット ビューの新しいデフォルトの場所は <a href="https://aka.ms/vscode-secondary-sidebar">セカンダリ サイドバー</a> です。セカンダリ サイドバーを使用すると、ファイル エクスプローラーやソース管理などの他のビューを引き続き使用できる状態で、いつでもチャットを開くことができます。これにより、VS Code でより統合された AI エクスペリエンスが提供されます。<code>kb(workbench.action.chat.open)</code> キーボード ショートカットを使用して、すばやくチャットにアクセスできます。</p>
+<p><img alt="移動後の新しい場所にあるチャット ビュー。" src="https://code.visualstudio.com/assets/updates/1_95/chat-new-location.png" /></p>
+<p>コマンド センターの横に新しいチャット メニューが導入されたことで、チャットを使用したセカンダリ サイドバーをすぐに表示できます:</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/chat-video.mp4" title="セカンダリ サイドバーのチャット。" autoplay loop controls muted></video>
+
+<p>チャット メニューを使用すると、Copilot チャットの最も一般的なタスクにアクセスできます。このメニューを非表示にしたい場合は、新しい設定 <code>setting(chat.commandCenter.enabled)</code> が提供されます。</p>
+<p><img alt="コマンド センターのチャット メニュー。" src="https://code.visualstudio.com/assets/updates/1_95/chat-menu.png" /></p>
+<p><strong>注</strong>: 以前に GitHub Copilot をインストールしていた場合、チャット ビューを以前の場所に復元できるビューが表示されます。これにより、以前の場所にチャット ビューを復元できます。</p>
+<p><img alt="チャットがセカンダリ サイドバーに移動したことを示す以前の場所のチャット ビュー。" src="https://code.visualstudio.com/assets/updates/1_95/chat-old-location.png" /></p>
+<h3 id="copilot-code-reviews">Copilot コード レビュー<a class="headerlink" href="#copilot-code-reviews" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Copilot コード レビューは現在プレビュー中です</p>
+</blockquote>
+<p>Visual Studio Code の GitHub Copilot コード レビューを使用すると、コードの記述中に迅速な AI 駆動のフィードバックを受け取ったり、プッシュする前にすべての変更のレビューをリクエストしたりできます。Visual Studio Code の GitHub Copilot コード レビューは現在プレビュー中です。ぜひ試してみて、<a href="https://github.com/microsoft/vscode-copilot-release/issues">問題</a> を通じてフィードバックを提供してください。</p>
+<p>VS Code で Copilot コード レビューを使用する方法は 2 つあります:</p>
+<ul>
+<li>
+<p><strong>選択のレビュー</strong>: クイック レビュー パスの場合、エディターでコードを選択し、エディター コンテキスト メニューから <strong>Copilot</strong> &gt; <strong>レビューとコメント</strong> を選択するか、コマンド パレットから <strong>GitHub Copilot: レビューとコメント</strong> コマンドを使用します。<em>(この機能はプレビュー中です。)</em></p>
+</li>
+<li>
+<p><strong>変更のレビュー</strong>: コミットされていないすべての変更の詳細なレビューの場合、<strong>ソース管理</strong> ビューで <strong>Copilot コード レビュー</strong> ボタンを選択します。これを GitHub.com のプル リクエストでも行うことができます。<em>(すべての Copilot サブスクライバーに公開されている<a href="https://gh.io/copilot-code-review-waitlist">ウェイトリスト</a> に参加します)</em></p>
+<p><img alt="コミットされていない変更のレビューをリクエストする" src="https://code.visualstudio.com/assets/updates/1_95/review_diff.png" /></p>
+</li>
+</ul>
+<p>Copilot のフィードバックは、エディター内のコード行に添付されたコメントとして表示されます。可能な場合、コメントには実行可能なコードの提案が含まれており、1 回のアクションで適用できます。</p>
+<p><img alt="コード選択をレビューするコメントを示すスクリーンショット" src="https://code.visualstudio.com/assets/updates/1_95/reviewing_selection.png" /></p>
+<p>Copilot コード レビューの詳細については、<a href="https://gh.io/copilot-code-review-docs">GitHub コード レビュー ドキュメント</a> を参照してください。</p>
+<p>Copilot のコード選択に関するクイック レビューは、適切なコンテキストを提供することで、チームやプロジェクトの特定のプラクティスに一致するフィードバックを提供できます。カスタム レビュー指示を使用して選択をレビューする場合、<code>setting(github.copilot.chat.reviewSelection.instructions)</code> 設定を使用して、これらの特定の要件を定義できます。<a href="https://code.visualstudio.com/docs/copilot/copilot-customization">コード生成およびテスト生成指示</a>と同様に、指示を設定に直接定義するか、別のファイルに保存して設定で参照することができます。</p>
+<p>次のコード スニペットは、レビュー指示の例を示しています:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">&quot;github.copilot.chat.reviewSelection.instructions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ログは Log4j を使用して行う必要があります。&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;フォールト ハンドリングには常に Polly ライブラリを使用してください。&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;file&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;code-style.md&quot;</span><span class="w"> </span><span class="c1">// ファイル `code-style.md` から指示をインポートします</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+</code></pre></div>
+<p><code>code-style.md</code> ファイルの内容の例:</p>
+<div class="highlight"><pre><span></span><code>プライベート フィールドはアンダースコアで始める必要があります。
+
+ファイルには 1 つのクラス宣言のみを含めることができます。
+</code></pre></div>
+<h3 id="_1">チャット参加者の自動検出<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p><strong>設定</strong>: <code>setting(chat.experimental.detectParticipant.enabled)</code></p>
+<p>GitHub Copilot には <code>@workspace</code> などのいくつかの組み込みチャット参加者があり、他の拡張機能をインストールしてチャット参加者を追加することもできます。</p>
+<p>自然言語でチャット参加者を使用しやすくするために、Copilot チャットは可能な場合に質問を適切な参加者またはチャット コマンドに自動的にルーティングします。</p>
+<p>自動的に選択された参加者が質問に適していない場合は、チャット応答の上部にある <strong>再実行しない</strong> リンクを選択して、質問を Copilot に再送信できます。</p>
+<p><img alt="@workspace 参加者が自動的に検出される方法を示すチャット ビューのスクリーンショット。" src="https://code.visualstudio.com/assets/updates/1_93/participant-detection.png" /></p>
+<p>今月、リクエストごとにこの検出動作をスキップするアクションも追加しました。チャット プロンプトを入力するときのデフォルトのアクションは <strong>送信してディスパッチ</strong> であり、参加者の検出が含まれます。<strong>送信</strong> を選択すると、リクエストは Copilot チャットに直接送信され、チャット参加者に自動的にディスパッチされません。</p>
+<p><img alt="チャット ビューで利用可能な「送信」コマンドのリスト。" src="https://code.visualstudio.com/assets/updates/1_95/chat-send-commands.png" /></p>
+<p><code>setting(chat.experimental.detectParticipant.enabled)</code> 設定を使用して、自動参加者検出を完全に無効にすることもできます。</p>
+<h3 id="_2">現在のエディター コンテキストを制御する<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>Copilot チャットは常に、チャット リクエストのコンテキストとして現在の選択または現在表示されているコードを自動的に含めていました。大規模言語モデル (LLM) は、コンテキストが関連しているかどうかを理解するのが得意です。ただし、現在のエディターに関する質問をしていない場合、このコンテキストを含めると、モデルが質問を解釈する方法に影響を与える可能性があります。</p>
+<p>現在、チャット入力に特別な添付コントロールを表示して、エディター コンテキストに関するヒントを提供し、エディター コンテキストを含めるかどうかを切り替えることができます。</p>
+<p><img alt="チャット入力の現在のエディター コンテキスト コントロール。コンテキストが含まれていないことを示しています。" src="https://code.visualstudio.com/assets/updates/1_95/implicit-context.png" /></p>
+<p>エディター コンテキストの動作に変更はありません。アクティブなエディターに選択がある場合は、選択のみが含まれます。それ以外の場合は、表示されているコードのみが含まれます。ペーパークリップ ボタンを使用するか、チャット プロンプトに <code>#</code> を入力して、他のファイルや完全なファイルを添付することもできます。</p>
+<h3 id="_3">インタラクティブなワークスペース シンボル リンク<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>Copilot チャットの一般的な使用例は、ワークスペース内のコードに関する質問をすることです。たとえば、選択したコードの新しい単体テストを生成するために <code>/tests</code> を使用したり、プロジェクト内の特定のクラスや関数を見つけるために <code>@workspace</code> を使用したりします。このマイルストーンでは、Copilot がチャット応答で言及するワークスペース シンボルのリンクを強化しました。これらのシンボル リンクは、Copilot の応答をよりよく理解し、それらで使用されるシンボルについて詳しく学ぶのに役立ちます。</p>
+<p>シンボル リンクは、前回のマイルストーンで追加した<a href="https://code.visualstudio.com/updates/v1_94#_improved-file-links-in-chat-responses">ファイル リンク</a>と同様に、応答内で小さなピルとしてレンダリングされます。シンボルについて詳しく知るには、シンボル リンクを選択してそのシンボルの定義にジャンプします:</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/copilot-symbol-links-overview.mp4" title="Copilot の応答でシンボル リンクがレンダリングされます。クリックするとシンボルの定義に移動します。" autoplay loop controls muted></video>
+
+<p>シンボル リンクにカーソルを合わせると、シンボルが定義されているファイルを確認できます:</p>
+<p><img alt="シンボル リンクにカーソルを合わせて、シンボルが定義されているファイルを表示します。" src="https://code.visualstudio.com/assets/updates/1_95/copilot-symbol-link-hover.png" /></p>
+<p>シンボルを詳しく調べるには、シンボル リンクを右クリックして、<strong>実装に移動</strong> や <strong>参照に移動</strong> などのオプションを含むコンテキスト メニューを表示します:</p>
+<p><img alt="シンボルについて詳しく知るためにシンボル リンクのコンテキスト メニューを使用します。" src="https://code.visualstudio.com/assets/updates/1_95/copilot-symbol-link-context-menu.png" /></p>
+<p>基本的なシンボル リンクは、定義に移動をサポートする任意の言語で機能するはずです。実装に移動などの高度な IntelliSense オプションも、その言語のサポートが必要です。Copilot の応答で使用されるプログラミング言語に最適なシンボル サポートを得るために、言語拡張機能をインストールしてください。</p>
+<h3 id="copilot">問題ホバーで Copilot アクションを使用して修正する<a class="headerlink" href="#copilot" title="Permanent link">&para;</a></h3>
+<p>エディターで問題にカーソルを合わせると、現在、Copilot を使用して問題を修正するアクションが含まれています。このアクションは、修正可能な問題に対して利用可能であり、修正は Copilot によって生成されます。</p>
+<p><img alt="Copilot アクションを使用して修正する問題ホバー。" src="https://code.visualstudio.com/assets/updates/1_95/copilot-fix-problem-hover.png" /></p>
+<h3 id="_4">ワークスペースのインデックス作成<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><a href="https://code.visualstudio.com/docs/copilot/copilot-chat#_workspace"><code>@workspace</code></a> を使用すると、現在のプロジェクトのコードに関する質問をすることができます。これは、<a href="https://github.blog/2023-02-06-the-technology-behind-githubs-new-code-search">GitHub のコード検索</a>または VS Code が構築するスマートなローカル インデックスを使用して実装されます。このマイルストーンでは、このワークスペース インデックスの使用方法を理解するためのいくつかの新しい UI 要素を追加しました。</p>
+<p>まず、新しい <strong>GitHub Copilot: ローカル ワークスペース インデックスの構築</strong> コマンドを使用して、現在のワークスペースのインデックス作成を明示的に開始できます。このインデックス作成は、通常、最初に <code>@workspace</code> 質問をするときに自動的に開始されます。新しいコマンドを使用すると、いつでもインデックス作成を開始できます。このコマンドは、現在最大 2000 ファイル (たとえば、<code>node_modules</code> や <code>out</code> ディレクトリなどの無視されたファイルを含まない) の大規模なワークスペースのインデックス作成も有効にします。</p>
+<p>インデックスが構築されている間、ステータス バーに進行状況アイテムが表示されるようになりました:</p>
+<p><img alt="現在のワークスペースのインデックス作成の進行状況を示すステータス バー アイテム。" src="https://code.visualstudio.com/assets/updates/1_95/copilot-workspace-ui-progress.png" /></p>
+<p>数百のファイルを含むワークスペースのインデックス作成には少し時間がかかる場合があります。インデックスが構築されている間に <code>@workspace</code> 質問をしようとすると、待機する代わりに、Copilot はより迅速に構築できるシンプルなローカル インデックスを使用して迅速に応答しようとします。この場合、応答に警告が表示されるようになりました:</p>
+<p><img alt="Copilot インデックスが構築されていることをユーザーに通知する応答に表示される警告。" src="https://code.visualstudio.com/assets/updates/1_95/copilot-workspace-ui-warning.png" /></p>
+<p>この場合、Copilot はより高度なインデックスではなく、シンプルなローカル インデックスを使用しても質問に答えることができました。これはよくあることですが、より曖昧または複雑な質問は、スマートなインデックスが構築された後にのみ回答できる場合があります。また、ワークスペースが GitHub リポジトリによってバックアップされている場合、代わりに <a href="https://github.blog/2023-02-06-the-technology-behind-githubs-new-code-search">GitHub のコード検索</a> を使用して質問に回答できることに注意してください。つまり、コード検索はシンプルなローカル インデックスの代わりに使用されます。</p>
+<h3 id="_5">チャットのフォローアップの改善<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><strong>設定</strong>: <code>setting(github.copilot.chat.followUps)</code></p>
+<p>チャット ビューでのチャット会話のスペースを増やすために、フォローアップ プロンプトをより簡潔にし、デフォルトでは最初のターンにのみ表示されるようにしました。<code>setting(github.copilot.chat.followUps)</code> 設定を構成して、フォローアップ プロンプトが表示されるタイミングを変更します:</p>
+<ul>
+<li><code>firstOnly</code> (デフォルト) - フォローアップ プロンプトは最初のターンにのみ表示されます</li>
+<li><code>always</code> - フォローアップ プロンプトは常に表示されます</li>
+<li><code>never</code> - フォローアップ プロンプトを無効にします</li>
+</ul>
+<h3 id="_6">セマンティック検索で関連性で並べ替え (実験的)<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><strong>設定</strong>: <code>setting(github.copilot.chat.search.semanticTextResults)</code></p>
+<p>前回のマイルストーンでは、Copilot を使用してセマンティックに関連する検索結果を取得するセマンティック検索を実行する機能を導入しました。検索結果を関連性で並べ替えることで、検索結果を改善しました。より関連性の高いスニペットからのキーワード一致が全体的により関連性が高いと見なされます。</p>
+<h2 id="_7">ワークベンチ<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="multiple-github-accounts">複数の GitHub アカウント<a class="headerlink" href="#multiple-github-accounts" title="Permanent link">&para;</a></h3>
+<p>先月の機能をデフォルトの動作に昇格させ、VS Code で複数の GitHub アカウントに同時にログインできるようになりました。</p>
+<p><img alt="アカウント メニューの複数の GitHub アカウント。" src="https://code.visualstudio.com/assets/updates/1_95/multi-github-accounts.png" /></p>
+<p>複数のアカウントが必要なシナリオの例を次に示します:</p>
+<ul>
+<li><em>Account1</em> を設定同期に使用し、<em>Account2</em> を GitHub プル リクエスト拡張機能に使用する</li>
+<li><em>Account1</em> を GitHub 拡張機能 (プッシュ用) に使用し、<em>Account2</em> を GitHub Copilot に使用する</li>
+</ul>
+<p>この機能を使用するには、(設定同期などの組み込み機能や拡張機能を使用して) ログイン アクションをトリガーし、別のアカウントにログインするオプションが表示されます。この機能は、後でアカウントを変更する必要がある場合に便利な<a href="#add-additional-accounts-when-changing-account-preferences">アカウント優先設定クイック ピック</a>とも相性が良いです。</p>
+<p>ほとんどの機能は既存の拡張機能で引き続き動作するはずですが、一部の動作はこのマルチアカウント環境に完全には適合しない場合があります。改善の余地があると思われる場合は、それらの拡張機能に対して問題を報告してください。比較的新しい <code>vscode.authentication.getAccounts('github')</code> API を使用すると、拡張機能は複数のアカウントを処理するための多くの機能を利用できます。</p>
+<h3 id="add-additional-accounts-when-changing-account-preferences">アカウント優先設定を変更する際に追加のアカウントを追加する<a class="headerlink" href="#add-additional-accounts-when-changing-account-preferences" title="Permanent link">&para;</a></h3>
+<p>先月、<a href="https://code.visualstudio.com/updates/v1_94#_change-an-extensions-account-preference">アカウント優先設定クイック ピック</a>を導入しました。これは、何らかの理由で拡張機能に使用する優先アカウントを変更する必要がある場合に便利です。</p>
+<p>受け取ったフィードバックの 1 つは、まだログインしていないアカウントを簡単に追加したいというものでした。このマイルストーンでは、新しいアカウントを追加して、認証フローを開始し、そのアカウントにアカウント優先設定を設定できる新しい項目をクイック ピックに追加しました。<strong>新しいアカウントを使用...</strong> 項目を使用して、認証フローを開始し、アカウント優先設定をそのアカウントに設定します。</p>
+<p><img alt="アカウント優先設定クイック ピックの新しいアカウント オプションを使用します。" src="https://code.visualstudio.com/assets/updates/1_95/use-new-account.png" /></p>
+<h3 id="settings-editor-indicator-for-experimental-and-preview-settings">設定エディターの実験的およびプレビュー設定のインジケーター<a class="headerlink" href="#settings-editor-indicator-for-experimental-and-preview-settings" title="Permanent link">&para;</a></h3>
+<p>以前は、設定エディターを見ても、どの設定が実験的またはプレビューであるかが常に明確ではありませんでした。実験的および今後の機能を強調するために、設定エディターは現在、実験的およびプレビュー設定の横にインジケーターを表示します。設定エディターの検索ボックスに <code>@tag:experimental</code> または <code>@tag:preview</code> と入力して、設定をフィルタリングできます。</p>
+<p>拡張機能の作成者は、設定エディターに対応するインジケーターを表示するために、設定に「experimental」または「preview」タグを追加できます。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/settings-editor-preview-search.mp4" title="設定エディターでプレビュー設定を検索する" autoplay loop controls muted></video>
+
+<p><em>テーマ: <a href="https://marketplace.visualstudio.com/items?itemName=mgwg.light-pink-theme">Light Pink</a> (プレビュー <a href="https://vscode.dev/editor/theme/mgwg.light-pink-theme">vscode.dev</a>)</em></p>
+<h3 id="_8">プロファイルのアイコンを追加<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>このマイルストーンでは、プロファイルのアイコンを追加しました。プロファイルをカスタマイズするために、より多くのアイコンから選択できます。</p>
+<p><img alt="すべての利用可能なプロファイル アイコンを示す画像で、新しく追加されたアイコンを強調表示しています。" src="https://code.visualstudio.com/assets/updates/1_95/profile-icons.png" /></p>
+<h3 id="_9">パネルのビュー アイコン<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>ワークベンチのパネル領域では、ビューは通常、タイトル バーにラベルとして表示されます (たとえば、<em>TERMINAL</em> や <em>OUTPUT</em>)。ただし、画面が小さい場合、これらのラベルが使用可能なスペースを超えて表示され、一部のビューがドロップダウン メニューにオーバーフローすることがあります。</p>
+<p>これに対処するために、新しい設定を追加しました: <code>setting(workbench.panel.showLabels:false)</code>。無効にすると、ビューはラベルの代わりにアイコンとして表示され、水平スペースを節約し、オーバーフローを減らします。</p>
+<p><strong><code>workbench.panel.showLabels: true</code></strong></p>
+<p><img alt="各パネルのラベルを表示するパネル領域。" src="https://code.visualstudio.com/assets/updates/1_95/panel-showLabels-on.png" /></p>
+<p><strong><code>workbench.panel.showLabels: false</code></strong></p>
+<p><img alt="各パネルのアイコンのみを表示し、ラベルを表示しないパネル領域。" src="https://code.visualstudio.com/assets/updates/1_95/panel-showLabels-off.png" /></p>
+<h2 id="_10">エディター<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h3 id="_11">出現のハイライト遅延<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>このマイルストーンでは、エディターで出現がハイライトされるまでの遅延を制御するための設定 <code>setting(editor.occurrencesHighlightDelay)</code> を導入しました。この遅延値を下げると、セマンティック ハイライトを使用する際にエディターの応答性が向上します。</p>
+<h2 id="web-vs-code">Web 用 VS Code<a class="headerlink" href="#web-vs-code" title="Permanent link">&para;</a></h2>
+<h3 id="web-vs-code_1">Web 用 VS Code はローカル ファイル イベントをサポートします<a class="headerlink" href="#web-vs-code_1" title="Permanent link">&para;</a></h3>
+<p>バージョン 129 以降の Chrome または Edge を使用する場合、ローカル フォルダーを使用して <a href="https://insiders.vscode.dev">https://insiders.vscode.dev</a> を開くと、ファイル イベントがサポートされるようになりました。ブラウザー外で開かれたワークスペースのファイルやフォルダーに変更を加えると、これらの変更がブラウザー内ですぐに反映されます。</p>
+<p>この機能は、新しい API として提案されている <a href="https://chromestatus.com/feature/4622243656630272"><code>FileSystemObserver</code></a> インターフェイスを活用しています。</p>
+<h2 id="_12">拡張機能への貢献<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h3 id="copilot-extensions-showcase">Copilot 拡張機能の紹介<a class="headerlink" href="#copilot-extensions-showcase" title="Permanent link">&para;</a></h3>
+<p>このマイルストーンでは、<a href="https://code.visualstudio.com/docs/copilot/copilot-extensibility-overview">VS Code での Copilot 拡張機能</a>を紹介するいくつかの拡張機能の構築に取り組みました。これらの拡張機能は、次の機能を示しています:</p>
+<ul>
+<li><a href="https://code.visualstudio.com/api/references/vscode-api">チャット参加者 &amp; ツール API</a></li>
+<li><a href="https://github.com/microsoft/vscode-prompt-tsx">prompt-tsx</a></li>
+<li>GitHub Copilot が提供する言語モデルを活用する方法</li>
+</ul>
+<p>これらの拡張機能を試して、独自の拡張機能で Copilot をどのように拡張できるかを確認してください。</p>
+<table>
+<thead>
+<tr>
+<th>拡張機能</th>
+<th>リンク</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub プル リクエスト</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">Marketplace</a></td>
+</tr>
+<tr>
+<td>Copilot 用 Web 検索</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-websearchforcopilot">Marketplace</a>, <a href="https://github.com/microsoft/vscode-websearchforcopilot">ソース コード</a></td>
+</tr>
+<tr>
+<td>Copilot を使用した MermAId 図の生成</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.copilot-mermaid-diagram">Marketplace</a></td>
+</tr>
+<tr>
+<td>Copilot 用データ分析</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-copilot-data-analysis">Marketplace</a>, <a href="https://github.com/microsoft/vscode-data-analysis-for-copilot">ソース コード</a></td>
+</tr>
+<tr>
+<td>VS Code コマンダー</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-commander">Marketplace</a></td>
+</tr>
+<tr>
+<td>Copilot プレビューのビジョン</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-copilot-vision">Marketplace</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="github">GitHub プル リクエスト<a class="headerlink" href="#github" title="Permanent link">&para;</a></h4>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">GitHub プル リクエスト</a> 拡張機能のバージョン <a href="https://github.com/microsoft/vscode-pull-request-github/blob/main/CHANGELOG.md#01000">0.100.0</a> には、Copilot 統合が追加されました:</p>
+<ul>
+<li>チャット ビューで <code>@githubpr</code> チャット参加者を使用して、問題を検索したり、問題/プルリクエストを要約したり、問題の修正を提案したりできます。<code>@githubpr</code> は、これを実現するために多くの言語モデル ツールを使用します。</li>
+<li>GitHub 通知を表示する新しい <strong>通知</strong> ビューもあり、Copilot を使用して通知を優先順位付けするアクションがあります。</li>
+</ul>
+<p>すべてを試すには、次の設定を行います:</p>
+<ul>
+<li><code>setting(githubPullRequests.experimental.chat:true)</code></li>
+<li><code>setting(githubPullRequests.experimental.notificationsView:true)</code></li>
+</ul>
+<h5 id="copilot_1">Copilot を使用した問題検索<a class="headerlink" href="#copilot_1" title="Permanent link">&para;</a></h5>
+<p>新しい <code>@githubpr</code> チャット参加者は、GitHub で問題を検索できます。</p>
+<p><img alt="最も多くのバグを含む Copilot の問題検索。" src="https://code.visualstudio.com/assets/updates/1_95/copilot-issue-search-most-bugs.png" /></p>
+<p>問題を表示する際、<code>@githubpr</code> は Markdown テーブルを表示し、検索に基づいて最適な列を選択しようとします。</p>
+<p><img alt="10 月に閉じられた問題の Copilot 問題検索。" src="https://code.visualstudio.com/assets/updates/1_95/copilot-issue-search.png" /></p>
+<h5 id="copilot_2">Copilot を使用した要約と修正<a class="headerlink" href="#copilot_2" title="Permanent link">&para;</a></h5>
+<p><strong>問題</strong> ビューにリストされている各問題には、選択した問題を要約する <strong>Copilot で要約</strong> アクションが新たに追加されました。また、選択した問題を要約し、ワークスペース コンテキストを使用して修正を提案する <strong>Copilot で修正</strong> アクションも追加しました。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/fix-summarize-issue.mp4" title="GitHub の問題を要約および修正する" autoplay loop controls muted></video>
+
+<h5 id="copilot_3">Copilot を使用した通知の優先順位付け (実験的)<a class="headerlink" href="#copilot_3" title="Permanent link">&para;</a></h5>
+<p>このマイルストーンでは、リポジトリ全体の未読通知をリストする実験的な <strong>通知</strong> ビューを追加しました。デフォルトでは、通知は最新の更新順に降順で並べ替えられますが、ビュー タイトルの <code>...</code> メニューから <strong>Copilot を使用して優先順位を付ける</strong> アクションを使用して、Copilot に通知の優先順位を付けさせることができます。各通知を選択すると、Copilot を使用して通知を要約するアクションがトリガーされます。このビューには、通知を既読としてマークしたり、GitHub.com で通知を開いたりするための簡単にアクセスできるアクションも含まれています。</p>
+<p><img alt="通知ビュー" src="https://code.visualstudio.com/assets/updates/1_95/notifications-view.png" /></p>
+<h4 id="copilot-web">Copilot 用 Web 検索<a class="headerlink" href="#copilot-web" title="Permanent link">&para;</a></h4>
+<p>この拡張機能は次の機能を示しています:</p>
+<ul>
+<li>チャット参加者 &amp; ツール API</li>
+<li><a href="https://github.com/microsoft/vscode-prompt-tsx">prompt-tsx</a></li>
+<li>GitHub Copilot が提供する言語モデルを活用する方法</li>
+</ul>
+<p>ソース コードは<a href="https://github.com/microsoft/vscode-websearchforcopilot">GitHub でこちらにあります</a>。</p>
+<h5 id="_13">説明<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h5>
+<p>Copilot で Web から最新かつ関連性の高い情報を取得します。</p>
+<p>これは、<code>setting(websearch.preferredEngine)</code> で構成された 2 つの異なる検索エンジンのいずれかによって提供されます:</p>
+<ul>
+<li><a href="http://tavily.com">Tavily</a> (デフォルト)</li>
+<li><a href="https://bing.com">Bing</a></li>
+</ul>
+<p>ユーザーとして、この拡張機能を使用するには、これらのサービスのいずれかから API キーを取得する必要があります。初回使用時にそのキーを要求し、VS Code の組み込みシークレット ストレージを使用して保存し、GitHub アカウントと同様に VS Code の認証スタックを介して管理できます。</p>
+<h5 id="_14">チャット参加者<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h5>
+<p>この拡張機能は、インターネットからのライブ情報が必要な質問を処理できる <code>@websearch</code> チャット参加者を提供します。
+<code>@websearch when did Workspace Trust ship in vscode?</code> を手動で使用して呼び出すことができます。</p>
+<p><img alt="質問「Workspace Trust は vscode でいつ出荷されましたか」と回答が表示され、参照と詳細が表示されます。" src="https://code.visualstudio.com/assets/updates/1_95/websearch-participant.png" /></p>
+<h5 id="_15">チャット ツール<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h5>
+<p>この拡張機能は、<code>#websearch</code> チャット言語モデル ツールも提供します。これは参加者と似ていますが、他のチャット参加者で Web からのコンテキストを提供するのに役立ちます。たとえば:</p>
+<ul>
+<li><code>@workspace /new #websearch create a new web app written in Python using the most popular framework</code></li>
+</ul>
+<p><img alt="最も人気のあるフレームワークを使用して Python で記述された新しい Web アプリを作成するという質問。結果は Django を使用したプロジェクトです。" src="https://code.visualstudio.com/assets/updates/1_95/websearch-tool.png" /></p>
+<p>さらに、独自のチャット参加者またはツールを作成している場合は、<code>vscode.lm.invokeTool</code> API を介してこのチャット ツールを使用できます。</p>
+<h4 id="copilot-mermaid">Copilot を使用した MermAId 図の生成<a class="headerlink" href="#copilot-mermaid" title="Permanent link">&para;</a></h4>
+<p>vscode-mermAId (<code>vscode:extension/ms-vscode.copilot-mermaid-diagram</code>) 拡張機能は、GitHub Copilot に新しいチャット参加者を提供し、Mermaid を使用してコードの視覚化を作成および変更します。Mermaid は、Markdown にインスパイアされた図表およびチャート作成ツールです。</p>
+<h5 id="_16">図の作成とレンダリング<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h5>
+<p>チャット会話を通じて Mermaid がサポートする任意のタイプの図を作成し、<code>/iterate</code> スラッシュ コマンドを使用して図を洗練させます。スラッシュ コマンドは、モデルに追加のガイダンスを提供するために特定の図に対して利用できます。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/iterate-on-sequence-diagram.mp4" title="シーケンス図を作成し、参加者を削除するために反復します" autoplay loop controls muted></video>
+
+<p>フローなどの特定の図の種類には、図を作成するために収集された参照に戻るリンクが追加されます。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/diagram-with-links-short.mp4" title="図を生成し、参照されたコードの部分に戻るリンクをクリックします" autoplay loop controls muted></video>
+
+<h5 id="mermaid">Mermaid ビジュアル アウトライン ビュー<a class="headerlink" href="#mermaid" title="Permanent link">&para;</a></h5>
+<p><strong>ビジュアル アウトライン</strong> ビューを開いて、アクティブなエディターから動的に図を生成します。詳細な制御のためにチャットに分岐できます。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/mermaid-outline-view-iterate.mp4" title="Mermaid ビジュアル アウトライン ビューを使用して図を生成し、チャットで反復します" autoplay loop controls muted></video>
+
+<h5 id="_17">チャット ツール<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h5>
+<p>この拡張機能は、ファイルまたはワークスペース全体内のシンボル情報を収集するツールを提供し、この拡張機能がインストールされている場合に他のチャット参加者が使用できます。</p>
+<h4 id="copilot_4">Copilot 用データ分析<a class="headerlink" href="#copilot_4" title="Permanent link">&para;</a></h4>
+<p>Copilot 用データ分析拡張機能は、データ サイエンス分野の人々に力を与えます。<code>.csv</code> ファイルのクリーンアップから、さまざまな統計測定、グラフ、予測モデルを活用した高度なデータ分析まで、<code>@data</code> チャット参加者は、データ タスクに対してより高度で情報に基づいた意思決定を行うためのカスタマイズされた洞察とインタラクティビティを提供します。</p>
+<p>この拡張機能は、<a href="https://pyodide.org/en/stable/">Pyodide</a> を使用して Python コードを実行し、関連する Python コードの実行結果を取得するために LLM が使用できるツールを提供します。エラーが発生した場合に、より適切または適切な実行結果を得るためにスマートに再試行することもできます。分析を実行するために使用されるコード (または視覚化を生成するコード) を Jupyter Notebook または Python ファイルにエクスポートすることもできます。</p>
+<p>拡張機能は<a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-copilot-data-analysis">マーケットプレイス</a>からダウンロードでき、ソースは<a href="https://github.com/microsoft/vscode-data-analysis-for-copilot">GitHub でこちらにあります</a>。</p>
+<h5 id="_18">データ分析と視覚化<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h5>
+<ul>
+<li>CSV ファイルが与えられた場合、<code>Analyze the file #&lt;file name&gt;</code> などのプロンプトを入力するか、より具体的なプロンプトを入力します (以下の録画を参照)。</li>
+<li>フォローアップ プロンプトを提供して、チャート、プロットなどの視覚化の生成をリクエストします</li>
+</ul>
+<video src="https://code.visualstudio.com/assets/updates/1_95/data-analysis-chat-participant.mp4" title="Copilot でデータ分析チャット参加者を使用して CSV ファイルを分析します。" autoplay loop controls muted></video>
+
+<h5 id="_19">データ分析を実行するために使用されるコードのエクスポート<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h5>
+<ul>
+<li>分析を実行し、視覚化を生成するために使用される Python コードを表示できます</li>
+<li>コードを Jupyter Notebook または Python ファイルにエクスポートできます</li>
+</ul>
+<video src="https://code.visualstudio.com/assets/updates/1_95/data-analysis-export-chat-participant.mp4" title="データ分析を実行し、視覚化を生成するために使用されるコードをエクスポートします。" autoplay loop controls muted></video>
+
+<h5 id="csv">CSV ファイルのエディターおよびエクスプローラー統合<a class="headerlink" href="#csv" title="Permanent link">&para;</a></h5>
+<ul>
+<li>CSV ファイルを右クリックして分析します</li>
+<li>CSV ファイルを開き、Copilot アイコンを使用してファイルを分析します</li>
+</ul>
+<video src="https://code.visualstudio.com/assets/updates/1_95/data-analysis-csv-chat-participant.mp4" title="データ分析を実行し、視覚化を生成するために使用されるコードをエクスポートします。" autoplay loop controls muted></video>
+
+<h4 id="vs-code">VS Code コマンダー拡張機能<a class="headerlink" href="#vs-code" title="Permanent link">&para;</a></h4>
+<p>VS Code コマンダー拡張機能 (<code>vscode:extension/ms-vscode.vscode-commander</code>) は、VS Code 内での個人アシスタントとして機能します。この強力なツールを使用すると、会話形式の自由形式のテキストを使用して VS Code 環境を構成できます。VS Code コマンダーを使用すると、次のことができます:</p>
+<ul>
+<li>さまざまな設定やコマンドを発見して探索します</li>
+<li>開発環境をニーズに合わせて調整します</li>
+</ul>
+<p>これらのアクションは、シンプルで直感的なチャット インターフェイスを通じて実行できるため、VS Code 構成の管理がこれまで以上に簡単になります。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/vscode-commander-demo.mp4" title="Copilot チャット ビューで VS Code コマンダーの機能を紹介します" autoplay loop controls muted></video>
+
+<h4 id="copilot_5">Copilot プレビュー拡張機能のビジョン<a class="headerlink" href="#copilot_5" title="Permanent link">&para;</a></h4>
+<p>Copilot プレビュー拡張機能のビジョン (<code>vscode:extension/ms-vscode.vscode-copilot-vision</code>) を使用すると、画像をコンテキスト入力として直接添付でき、会話が豊かになり、より動的で視覚的にサポートされた応答が可能になります。この拡張機能は、最終的に GitHub Copilot チャットの組み込み画像フローに置き換えられます。</p>
+<h5 id="_20">チャットでのビジョン<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h5>
+<p>現在のところ、独自の OpenAI、Azure OpenAI、Anthropic、または Gemini キーを使用して、チャット ビューで画像添付フローを体験できます。クリップボードから画像を簡単に添付するか、チャットに直接ドラッグして開始します。</p>
+<p><img alt="チャットのやり取りのスクリーンショット。ユーザーがランディング ページの HTML と CSS を要求します。応答には、ヘッダー、ナビゲーション リンク (ホーム、アバウト、コンタクト)、および外部 CSS ファイルへのリンクを含む基本的な HTML 構造が提供されます。" src="https://code.visualstudio.com/assets/updates/1_95/demo.gif" /></p>
+<p><em>テーマ: <a href="https://marketplace.visualstudio.com/items?itemName=Tyriar.theme-sapphire">Sapphire</a> (プレビュー <a href="https://vscode.dev/editor/theme/Tyriar.theme-sapphire">vscode.dev</a>)</em></p>
+<h5 id="_21">クイック修正を使用したビジョン<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h5>
+<p>さらに、提供されたコード アクションを使用して、Markdown、HTML、JSX、または TSX ドキュメント内の画像の代替テキストを生成または洗練することで、説明テキストを簡単に組み込んでコンテキストとアクセシビリティを向上させることができます。代替テキストのクイック修正は、ワークスペース内の画像と画像 URL に対して機能します。</p>
+<p><img alt="例の Markdown ドキュメントには、代替テキストを生成するためのクイック修正機能が表示され、alt タグと値が自動的に挿入されます。次に、ユーザーは入力ボックスを使用して代替テキストを洗練するための別のクイック修正修正を促されます。ユーザーが洗練された説明を入力して送信すると、代替テキストがそれに応じて更新されます。" src="https://code.visualstudio.com/assets/updates/1_95/demo-alt-text.gif" /></p>
+<p>この拡張機能は、提案された <code>ChatReferenceBinaryData</code> API を使用します。ソース コードの使用例を確認するには、<a href="https://github.com/microsoft/vscode-copilot-vision">GitHub でこちらにあります</a>。</p>
+<h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<h4 id="repl">ネイティブ REPL 変数ビュー<a class="headerlink" href="#repl" title="Permanent link">&para;</a></h4>
+<p>ネイティブ Python REPL は、組み込みの変数ビューの最新の変数を提供します。これにより、ファイルからコードを実行したり、REPL 入力ボックスを通じてコードを実行したりする際に、インタープリターの状態を詳しく調べることができます。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/python-variable-view.mp4" title="ネイティブ REPL でコードを実行した後、デバッグ パネル内の変数ビューを開きます" autoplay loop controls muted></video>
+
+<h4 id="generate-docstrings-with-pylance">Pylance を使用してドックストリングを生成する<a class="headerlink" href="#generate-docstrings-with-pylance" title="Permanent link">&para;</a></h4>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a> のドックストリング テンプレート生成機能を使用して、Python コードのドキュメントをより便利に生成できるようになりました! <code>"""</code> または <code>'''</code> を入力し、<code>kbstyle(Ctrl+Space)</code> を押すか、電球を選択して <strong>ドックストリングの生成</strong> コード アクションを呼び出すことで、クラスまたはメソッドのドックストリング テンプレートを生成できます。生成されたドックストリングには、関数の説明、パラメーター、パラメーターの種類、戻り値、および戻り値の種類のフィールドが含まれます。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/pylance-generate-docstring.mp4" title="Pylance を使用して関数のドックストリング テンプレートを生成し、トリプル クォート内で Ctrl+Space を呼び出します。" autoplay loop controls muted></video>
+
+<p>この機能は現在実験的な設定の背後にありますが、すぐにデフォルトのエクスペリエンスにする予定です。<code>setting(python.analysis.supportDocstringTemplate:true)</code> 設定を有効にして、今日から試してみてください。</p>
+<h4 id="_22">すべてのドックストリングを折りたたむ<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
+<p>ドキュメント ストリングは、コードにコンテキストや説明を提供するのに最適ですが、コード自体に集中するために折りたたみたい場合があります。新しい <strong>Pylance: すべてのドックストリングを折りたたむ</strong> コマンドを使用して、ドックストリングを折りたたむことができるようになりました。このコマンドは、選択したキー バインディングにバインドすることもできます。折りたたみを解除するには、<strong>Pylance: すべてのドックストリングを折りたたみ解除</strong> コマンドを使用します。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/pylance-fold-docstrings.mp4" title="Pylance の新しいコマンドを使用してドックストリングを折りたたみおよび折りたたみ解除します。" autoplay loop controls muted></video>
+
+<h4 id="_23">インポート提案の改善<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h4>
+<p>Pylance の強力な機能の 1 つは、自動インポート提案を提供する機能です。デフォルトでは、Pylance はシンボルが定義されている場所からインポート提案を提供しますが、シンボルがインポートされているファイル (つまり、エイリアス) からインポートすることを希望する場合があります。新しい <code>setting(python.analysis.includeAliasesFromUserFiles:true)</code> 設定を使用して、Pylance が自動インポート提案やインポートの追加クイック修正でユーザー ファイルからエイリアス シンボルを含めるかどうかを制御できるようになりました。</p>
+<p>この設定を有効にすると、特に大規模なコードベースでは、Pylance がより多くのシンボルをインデックス化し、変更のためにより多くのファイルを監視する必要があるため、パフォーマンスに悪影響を与える可能性があることに注意してください。これにより、リソース使用量が増加する可能性があります。</p>
+<h4 id="ai">実験的な AI コード アクション: 抽象クラスの実装<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h4>
+<p>新しい実験的なコード アクションを使用して、AI と静的解析の両方の利点を享受できます! この機能には、<a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a> 拡張機能と <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat">GitHub Copilot</a> 拡張機能の両方が必要です。試してみるには、抽象クラスを継承するクラスを定義するときに <strong>Copilot を使用してすべての継承された抽象クラスを実装</strong> コード アクションを選択します。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/pylance-ai-code-action.mp4" title="Pylance と Copilot のコード アクションを使用して、継承された抽象クラスからメソッドを実装します。" autoplay loop controls muted></video>
+
+<p>この機能を無効にするには、ユーザー設定で <code>"python.analysis.aiCodeActions": {"implementAbstractClasses": false}</code> を設定します。</p>
+<h2 id="_24">拡張機能の作成<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h2>
+<h3 id="_25">言語モデルのツール<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<p><a href="https://code.visualstudio.com/api/references/vscode-api#lm.tools"><code>LanguageModelTool</code> API</a> を最終化しました! この API を使用すると、チャット拡張機能が言語モデルを外部データ ソースに接続したり、アクションを実行したりすることで、より強力なエクスペリエンスを構築できます。API には 2 つの主要な部分があります:</p>
+<ol>
+<li>
+<p>拡張機能が*ツール*を登録する機能。ツールは、言語モデルによって使用されることを目的とした機能の一部です。たとえば、ファイルの Git 履歴を読み取ることができます。ツールは <code>lm.registerTool</code> メソッドを使用して登録されると、<code>lm.tools</code> リスト内の他の拡張機能でもアクセスできます。これにより、共有ツールのエコシステムを介してチャット拡張機能が他の拡張機能とシームレスに統合できるようになります。</p>
+</li>
+<li>
+<p>言語モデルがツールをサポートするためのメカニズム。たとえば、拡張機能がリクエスト時にツールを渡し、言語モデルがツールの呼び出しを要求し、拡張機能がツールの呼び出し結果を拡張機能に通知するメカニズムです。</p>
+</li>
+</ol>
+<p>言語モデル ツールの使用は複雑であり、この API はその複雑さを隠しません。ツールを登録したり、チャット参加者でツールを使用したりする場合は、<a href="https://github.com/microsoft/vscode-extension-samples/tree/main/chat-sample">拡張機能サンプル</a>から始めることをお勧めします。</p>
+<h3 id="_26">チャット参加者の検出<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<p>GitHub Copilot がユーザーの質問を処理するためにチャット参加者または参加者コマンドを自動的に選択できるようにするための API を最終化しました。詳細なチュートリアルと推奨事項については、<a href="https://code.visualstudio.com/api/extension-guides/chat#implement-participant-detection">ドキュメント</a>を確認してください。</p>
+<h3 id="vs-code-speech">VS Code Speech<a class="headerlink" href="#vs-code-speech" title="Permanent link">&para;</a></h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-speech">VS Code Speech</a> 拡張機能は、<a href="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes?tabs=speech-sdk#speech-sdk-140-2024-august-release">Azure Speech SDK</a>の 8 月バージョンに更新され、音声からテキストへの認識のための新しいモデルが提供されます。この更新により、Copilot チャットなどの <a href="https://code.visualstudio.com/docs/editor/voice">VS Code での音声からテキストへの統合</a>で改善された結果が得られるはずです。</p>
+<h3 id="collapsiblestate">コメント スレッド <code>collapsibleState</code><a class="headerlink" href="#collapsiblestate" title="Permanent link">&para;</a></h3>
+<p><code>CommentThread</code> の展開/折りたたみ状態は、新しい <code>CommentThread.collapsibleState</code> プロパティを使用して変更できます。以前は、このプロパティはコメント スレッドが最初に表示されたときにのみ尊重されていました。</p>
+<h3 id="codicons">ウェルカム ビューでの Codicons<a class="headerlink" href="#codicons" title="Permanent link">&para;</a></h3>
+<p>ウェルカム ビューは、codicons をレンダリングする機能をサポートするようになりました。ウェルカム ビューで通常の <code>$(icon-name)</code> を使用してこれを行うことができます。</p>
+<p><img alt="テキスト、リンク、ボタン、および codicons の使用を示すサンプルのウェルカム ビュー。" src="https://code.visualstudio.com/assets/updates/1_95/welcome-view-codicons.png" /></p>
+<h3 id="_27">モデル ピッカーへのチャット参加者アクセス<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p>チャット ビューにあるモデル ピッカーに気付いたかもしれません。これを使用すると、チャット リクエストに使用されるモデルを選択できます。</p>
+<p><img alt="チャット ビューの Copilot モデル ピッカー コントロールを使用すると、別の言語モデルに切り替えることができます。" src="https://code.visualstudio.com/assets/updates/1_94/copilot-model-picker.png" /></p>
+<p>このモデル ピッカーを使用するには、チャット参加者拡張機能が新しい API を採用する必要があります。<code>ChatRequest</code> オブジェクトに新しい <code>model</code> プロパティを追加しました。これは、ピッカー内のモデルの <code>LanguageModelChat</code> インスタンスに設定されます。これを <code>lm.selectChatModels</code> メソッドの代わりに使用できます。拡張機能が選択されたモデル以外の特定のモデルを使用したい場合は、代わりに <code>lm.selectChatModels</code> を使用できます。</p>
+<h2 id="_28">プレビュー機能<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h2>
+<h3 id="typescript-57">TypeScript 5.7<a class="headerlink" href="#typescript-57" title="Permanent link">&para;</a></h3>
+<p>次期 TypeScript 5.7 リリースのサポートを引き続き改善しています。詳細については、<a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-beta/">TypeScript 5.7 ベータ ブログ投稿</a>および <a href="https://github.com/microsoft/TypeScript/issues/59905">TypeScript 5.7 プラン</a>を参照してください。</p>
+<p>TypeScript 5.7 のプレビュー ビルドを使用するには、<a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next">TypeScript Nightly 拡張機能</a>をインストールします。</p>
+<h3 id="javascript-typescript">JavaScript および TypeScript の貼り付け時のインポートの更新<a class="headerlink" href="#javascript-typescript" title="Permanent link">&para;</a></h3>
+<p>ファイル間でコードを移動した後にインポートを追加する必要があることにうんざりしていませんか? インポートの更新を貼り付け時に試してみてください! エディター間でコードをコピーして貼り付けると、VS Code はコードが貼り付けられたときに自動的にインポートを追加します:</p>
+<video src="https://code.visualstudio.com/assets/updates/1_95/jsts-update-imports-paste.mp4" title="タイトル" autoplay loop controls muted></video>
+
+<p>インポートが追加されただけでなく、貼り付けられたコードで使用されていたローカル変数の新しいエクスポートも追加されたことに注目してください!</p>
+<p>今日からこれを試してみるには、TypeScript 5.7 以降を使用していることを確認してください。次に、<code>javascript.experimental.updateImportsOnPaste</code>/<code>typescript.experimental.updateImportsOnPaste</code> を有効にします。現在、これは同じ VS Code ウィンドウ内のテキスト エディター間で貼り付ける場合にのみサポートされています。</p>
+<h2 id="api">提案された API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
+<h3 id="_29">画像添付のためのチャット参照バイナリ データ<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<p>拡張機能が提案された <code>ChatReferencebinaryData</code> API を使用している場合、チャットに画像 (<code>png</code>、<code>jpeg</code>、<code>bmp</code>、<code>gif</code>、および <code>tiff</code>) を貼り付けることができるようになりました。</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">ChatReferenceBinaryData</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * バイナリ データの MIME タイプ。</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="k">readonly</span><span class="w"> </span><span class="nx">mimeType</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * 参照のバイナリ データを取得します。</span>
+<span class="cm">     * @returns Uint8Array としてのバイナリ データに解決される promise。</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="nx">data</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">Thenable</span><span class="o">&lt;</span><span class="nb">Uint8Array</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @param mimeType バイナリ データの MIME タイプ。</span>
+<span class="cm">     * @param data 参照のバイナリ データ。</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">mimeType</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">Thenable</span><span class="o">&lt;</span><span class="nb">Uint8Array</span><span class="o">&gt;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>拡張機能の作成者は、画像がドラッグ アンド ドロップまたはクイック ピックから添付された場合は <code>URI</code>、貼り付けられた画像の場合は <code>ChatReferenceBinaryData</code> になる <code>request.references</code> を介してチャット ハンドラーを作成した後にこれにアクセスできます。</p>
+<h2 id="_30">エンジニアリング<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h2>
+<h3 id="llm">LLM 用のプロンプト作成ライブラリ<a class="headerlink" href="#llm" title="Permanent link">&para;</a></h3>
+<p>今月、言語モデル プロンプトの作成に過去 1 年間 Copilot チャットで開発および使用してきた <a href="https://www.npmjs.com/package/@vscode/prompt-tsx">@vscode/prompt-tsx</a> ライブラリをオープンソース化しました。このライブラリを使用すると、React に似た TSX/JSX 構文を使用してプロンプトを作成でき、プロンプトのトークン予算を最大限に活用するためのさまざまなツールが含まれています。</p>
+<h3 id="web-amd-esm">Web での AMD コードの削除と ESM の使用の拡大<a class="headerlink" href="#web-amd-esm" title="Permanent link">&para;</a></h3>
+<p>ソースから AMD (非同期モジュール定義) の最後の痕跡を削除しました。主に、リカバリ リリースが必要な場合に AMD をサポートするために保持していたビルド スクリプトから削除しました。</p>
+<p>さらに、<a href="https://vscode.dev">https://vscode.dev</a> も現在 100% ESM (ECMAScript モジュール) のみで実行されています。</p>
+<h3 id="eslint-9">ESLint 9 への移行<a class="headerlink" href="#eslint-9" title="Permanent link">&para;</a></h3>
+<p>メインの VS Code リポジトリとすべての<a href="https://github.com/microsoft/vscode-extension-samples">拡張機能サンプル</a>を ESLint 9 を使用するように更新しました。これには、すべての ESLint 構成を最新の<a href="https://eslint.org/blog/2023/10/flat-config-rollout-plans/">フラット構成</a>を使用するように移行することが含まれていました。</p>
+<h3 id="electron-32">Electron 32 の更新<a class="headerlink" href="#electron-32" title="Permanent link">&para;</a></h3>
+<p>このマイルストーンでは、安定版リリースのユーザーに Electron 32 の更新を提供しています。この更新には、Chromium 128.0.6613.186 および Node.js 20.18.0 が含まれています。Insiders ビルドでセルフホストして早期フィードバックを提供してくれた皆さんに感謝します。</p>
+<h2 id="_31">注目の修正<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/microsoft/vscode/issues/177046">177046</a> 拡張機能パネルで検索した後にクラッシュする</li>
+</ul>
+<h2 id="_32">ありがとう<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h2>
+<p>最後になりましたが、VS Code の貢献者の皆様に心からの感謝を申し上げます。</p>
+<h3 id="_33">問題追跡<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<p>問題追跡への貢献:</p>
+<ul>
+<li><a href="https://github.com/gjsjohnmurray">@gjsjohnmurray (John Murray)</a></li>
+<li><a href="https://github.com/IllusionMH">@IllusionMH (Andrii Dieiev)</a></li>
+<li><a href="https://github.com/RedCMD">@RedCMD (RedCMD)</a></li>
+</ul>
+<h3 id="_34">プルリクエスト<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<p><code>vscode</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/Abrifq">@Abrifq (Arda Aydın)</a>: <code>window.experimentalControlOverlay</code> のスコープをアプリケーションに変更する <a href="https://github.com/microsoft/vscode/pull/230593">PR #230593</a></li>
+<li><a href="https://github.com/asemdreibati">@asemdreibati (Asem Dreibati)</a>: Iterable 名前空間の slice 関数のエッジケースを処理する (<a class="magiclink magiclink-github magiclink-issue" href="https://github.com/microsoft/vscode-docs/issues/230683" title="GitHub Issue: microsoft/vscode-docs #230683">#230683</a>) <a href="https://github.com/microsoft/vscode/pull/232134">PR #232134</a></li>
+<li><a href="https://github.com/BABA983">@BABA983 (BABA)</a></li>
+<li>GPU ステータスを表示する開発者アクションを追加する <a href="https://github.com/microsoft/vscode/pull/222291">PR #222291</a></li>
+<li>スタイル変更時にデバッグ コンソールがクリアされる問題を修正する <a href="https://github.com/microsoft/vscode/pull/224694">PR #224694</a></li>
+<li>git エディターでエディターを開くことをサポートする <a href="https://github.com/microsoft/vscode/pull/226967">PR #226967</a></li>
+<li><a href="https://github.com/Bistard">@Bistard (SIHAN LI)</a>: 修正: <code>||</code> を使用する場合、コンテキスト ビュー アンカー オプションが解除される可能性があるタイプミス <a href="https://github.com/microsoft/vscode/pull/228896">PR #228896</a></li>
+<li><a href="https://github.com/cobey">@cobey (Cody Beyer)</a>: mistral ai npm パッケージを追加する <a href="https://github.com/microsoft/vscode/pull/229865">PR #229865</a></li>
+<li><a href="https://github.com/elias-pap">@elias-pap (Elias Papavasileiou)</a>: 修正: 保存時にトリガーされるアクションの設定説明を改善する <a href="https://github.com/microsoft/vscode/pull/230052">PR #230052</a></li>
+<li><a href="https://github.com/gjsjohnmurray">@gjsjohnmurray (John Murray)</a>: 拡張機能のコマンド ページのメニュー コンテキスト情報を修正する (fix <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/microsoft/vscode-docs/issues/229258" title="GitHub Issue: microsoft/vscode-docs #229258">#229258</a>) <a href="https://github.com/microsoft/vscode/pull/229260">PR #229260</a></li>
+<li><a href="https://github.com/hamirmahal">@hamirmahal (Hamir Mahal)</a>: スタイル: 読みやすさのために文字列フォーマットを簡素化する <a href="https://github.com/microsoft/vscode/pull/231763">PR #231763</a></li>
+<li><a href="https://github.com/injust">@injust (Justin Su)</a>: 「フルスクリーン モードではない」タイプミスを修正する <a href="https://github.com/microsoft/vscode/pull/229914">PR #229914</a></li>
+<li><a href="https://github.com/jamesharris-garmin">@jamesharris-garmin (James Harris)</a>: --locate-shell-integration-path で __dirname が欠落している問題を修正する <a href="https://github.com/microsoft/vscode/pull/231423">PR #231423</a></li>
+<li><a href="https://github.com/jeanp413">@jeanp413 (Jean Pierre)</a>: logOutputChannel が破棄された後に再作成されると消える問題を修正する <a href="https://github.com/microsoft/vscode/pull/225709">PR #225709</a></li>
+<li><a href="https://github.com/Kaidesuyoo">@Kaidesuyoo (Kaidesuyo)</a>: パフォーマンスの最適化 <a href="https://github.com/microsoft/vscode/pull/230804">PR #230804</a></li>
+<li><a href="https://github.com/kkshinkai">@kkshinkai (Kk Shinkai)</a>: エミッター オプションで <code>onDidAddListener</code> イベントを正しくトリガーする <a href="https://github.com/microsoft/vscode/pull/230259">PR #230259</a></li>
+<li><a href="https://github.com/Parasaran-Python">@Parasaran-Python (Parasaran)</a>: 228640: 非表示にする設定が有効な場合、プレランチ タスク ポップアップを非表示にする <a href="https://github.com/microsoft/vscode/pull/231225">PR #231225</a></li>
+<li><a href="https://github.com/quiple">@quiple (Minseo Lee)</a>: 韓国語フォントの優先順位を変更する <a href="https://github.com/microsoft/vscode/pull/230195">PR #230195</a></li>
+<li><a href="https://github.com/r3m0t">@r3m0t (Tomer Chachamu)</a>: 新しいテストが開始されるときのテスト結果のスクロールを修正する (fixes <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/microsoft/vscode-docs/issues/229531" title="GitHub Issue: microsoft/vscode-docs #229531">#229531</a>) <a href="https://github.com/microsoft/vscode/pull/229532">PR #229532</a></li>
+<li><a href="https://github.com/sandersn">@sandersn (Nathan Shively-Sanders)</a>: TS 拡張機能: CopilotRelated を copilot 拡張機能に登録する <a href="https://github.com/microsoft/vscode/pull/228610">PR #228610</a></li>
+<li><a href="https://github.com/ShadowRZ">@ShadowRZ (夜坂雅)</a>: 修正: package.json で適切なデスクトップ名を使用する <a href="https://github.com/microsoft/vscode/pull/231472">PR #231472</a></li>
+<li><a href="https://github.com/trevor-scheer">@trevor-scheer (Trevor Scheer)</a>: マーカー メッセージのホワイトスペース <code>nowrap</code> -&gt; <code>pre</code> <a href="https://github.com/microsoft/vscode/pull/229454">PR #229454</a></li>
+<li><a href="https://github.com/vietanhtwdk">@vietanhtwdk</a>: スティッキー スクロールのリサイズ時に再レンダリングする <a href="https://github.com/microsoft/vscode/pull/227400">PR #227400</a></li>
+<li><a href="https://github.com/yanglb">@yanglb (Yanblb)</a>: デコレーターに型チェックを追加する <a href="https://github.com/microsoft/vscode/pull/230626">PR #230626</a></li>
+</ul>
+<p><code>vscode-docs</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/Cecil0o0">@Cecil0o0 (hj)</a></li>
+<li>コア エディターで組み込みの言語サポートを提供しない <a href="https://github.com/microsoft/vscode-docs/pull/7679">PR #7679</a></li>
+<li><code>floating</code> としてデバッグ ツールバーの場所が制限されている <a href="https://github.com/microsoft/vscode-docs/pull/7704">PR #7704</a></li>
+<li>古いコマンド タイトル <a href="https://github.com/microsoft/vscode-docs/pull/7705">PR #7705</a></li>
+<li><a href="https://github.com/echofly">@echofly</a>: v1_94.md を更新する <a href="https://github.com/microsoft/vscode-docs/pull/7677">PR #7677</a></li>
+<li><a href="https://github.com/ghosted-sound">@ghosted-sound</a></li>
+<li>aksextensions.md を更新する <a href="https://github.com/microsoft/vscode-docs/pull/7693">PR #7693</a></li>
+<li>package-management.md を更新する <a href="https://github.com/microsoft/vscode-docs/pull/7694">PR #7694</a></li>
+<li><a href="https://github.com/gjsjohnmurray">@gjsjohnmurray (John Murray)</a></li>
+<li><code>hide</code> プロパティを文書化する <a href="https://github.com/microsoft/vscode-docs/pull/7643">PR #7643</a></li>
+<li>タイプミスを修正する <a href="https://github.com/microsoft/vscode-docs/pull/7687">PR #7687</a></li>
+<li><a href="https://github.com/oleschri">@oleschri</a>: 引数 --update-extensions を追加する <a href="https://github.com/microsoft/vscode-docs/pull/7681">PR #7681</a></li>
+<li><a href="https://github.com/partev">@partev</a>: URL リダイレクトを修正する <a href="https://github.com/microsoft/vscode-docs/pull/7640">PR #7640</a></li>
+<li><a href="https://github.com/ptrptrd">@ptrptrd</a>: ドキュメント: テーマ カラー参照の重複エントリを削除する <a href="https://github.com/microsoft/vscode-docs/pull/7639">PR #7639</a></li>
+<li><a href="https://github.com/RonakRahane">@RonakRahane</a>: C# の新しいコード カバレッジのドキュメントを追加する Fixes <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/microsoft/vscode-docs/issues/7635" title="GitHub Issue: microsoft/vscode-docs #7635">#7635</a> <a href="https://github.com/microsoft/vscode-docs/pull/7664">PR #7664</a></li>
+</ul>
+<p><code>vscode-js-debug</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/marcusball">@marcusball (Marcus Ball)</a>: 機能: websocket アドレスを検索する際に <code>remoteHostHeader</code> オプションを使用する <a href="https://github.com/microsoft/vscode-js-debug/pull/2111">PR #2111</a></li>
+</ul>
+<p><code>vscode-languageserver-node</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/DanTup">@DanTup (Danny Tuppeny)</a>: デフォルトとアイテムごとの commitCharacters/data がどのように組み合わされるかを制御するために CompletionList "applyKind" をサポートする <a href="https://github.com/microsoft/vscode-languageserver-node/pull/1558">PR #1558</a></li>
+</ul>
+<p><code>vscode-mypy</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/jwhitaker-gridcog">@jwhitaker-gridcog (Jarrad)</a>: 最寄りの pyproject.toml または mypy.ini のディレクトリで mypy を実行する <a href="https://github.com/microsoft/vscode-mypy/pull/316">PR #316</a></li>
+</ul>
+<p><code>vscode-vsce</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/andrewlayer">@andrewlayer</a>: api.ts に unpublish を追加する <a href="https://github.com/microsoft/vscode-vsce/pull/1061">PR #1061</a></li>
+<li><a href="https://github.com/deribaucourt">@deribaucourt (Enguerrand de Ribaucourt)</a>: 作業ディレクトリのシンボリック リンクに関する回帰を修正する <a href="https://github.com/microsoft/vscode-vsce/pull/1053">PR #1053</a></li>
+<li><a href="https://github.com/dtivel">@dtivel (Damon Tivel)</a>: <code>Content-Disposition</code> ヘッダーの <code>filename</code> 値を引用する <a href="https://github.com/microsoft/vscode-vsce/pull/1060">PR #1060</a></li>
+</ul>
+<p><code>language-server-protocol</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/asukaminato0721">@asukaminato0721 (Asuka Minato)</a></li>
+<li>systemd を追加する <a href="https://github.com/microsoft/language-server-protocol/pull/2034">PR #2034</a></li>
+<li>3 つの lsp を追加する <a href="https://github.com/microsoft/language-server-protocol/pull/2046">PR #2046</a></li>
+<li><a href="https://github.com/DanTup">@DanTup (Danny Tuppeny)</a>: <code>completionList.itemDefaults</code> と <code>completion</code> からの値がどのように組み合わされるかを決定するために <code>completionList.applyKind</code> をサポートする。 <a href="https://github.com/microsoft/language-server-protocol/pull/2018">PR #2018</a></li>
+<li><a href="https://github.com/DavyLandman">@DavyLandman (Davy Landman)</a>: Rascal を関連する LSP 実装者セクションに追加する <a href="https://github.com/microsoft/language-server-protocol/pull/2029">PR #2029</a></li>
+<li><a href="https://github.com/g-plane">@g-plane (Pig Fang)</a>: 句読点のタイプミスを修正する <a href="https://github.com/microsoft/language-server-protocol/pull/2048">PR #2048</a></li>
+<li><a href="https://github.com/nthykier">@nthykier (Niels Thykier)</a>: <code>debputy</code> 言語サーバーを追加する <a href="https://github.com/microsoft/language-server-protocol/pull/2044">PR #2044</a></li>
+<li><a href="https://github.com/RainCmd">@RainCmd (渴望蓝天)</a>: Rain 言語サーバーを LSP に追加する <a href="https://github.com/microsoft/language-server-protocol/pull/2039">PR #2039</a></li>
+<li><a href="https://github.com/WilsonZiweiWang">@WilsonZiweiWang (ziweiwang)</a>: BitBake 言語サーバーを追加する <a href="https://github.com/microsoft/language-server-protocol/pull/2049">PR #2049</a></li>
+<li><a href="https://github.com/yasmewad">@yasmewad (Yash Mewada)</a>: Smithy 言語サーバーのリンクを LSP に追加する <a href="https://github.com/microsoft/language-server-protocol/pull/2036">PR #2036</a></li>
+</ul>
+<p><code>lsprotocol</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/nobodywasishere">@nobodywasishere (Margret Riegert)</a>: README に Crystal プラグインを追加する <a href="https://github.com/microsoft/lsprotocol/pull/403">PR #403</a></li>
+</ul>
+<p><code>tolerant-php-parser</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/TysonAndre">@TysonAndre (Tyson Andre)</a>: 暗黙的に null 許容のパラメーターに関する php 8.4 の通知を修正する <a href="https://github.com/microsoft/tolerant-php-parser/pull/410">PR #410</a></li>
+</ul>
+<p><a id="scroll-to-top" role="button" title="Scroll to top" aria-label="scroll to top" href="#"><span class="icon"></span></a>
+<link rel="stylesheet" type="text/css" href="css/inproduct_releasenotes.css"/></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>
