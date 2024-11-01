@@ -1,0 +1,86 @@
+site_name: vscode-docs-ja
+site_url: https://mtkn1.github.io/vscode-docs-ja/
+repo_url: https://github.com/MtkN1/vscode-docs-ja
+repo_name: MtkN1/vscode-docs-ja
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - content.action.edit
+    - content.action.view
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  logo: images/logo-stable.png
+  favicon: images/logo-stable.png
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      provider: github
+      user: microsoft
+      repo: vscode-docs
+
+  # markdown-callouts
+  - github-callouts
+
+plugins:
+  - search
+  - social
+  - open-in-new-tab:
