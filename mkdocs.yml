@@ -82,5 +82,7 @@ markdown_extensions:
 
 plugins:
   - search
-  - social
+  - social:
+      cards_layout_options:
+        font_family: Noto Sans JP
   - open-in-new-tab:
