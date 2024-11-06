@@ -1,0 +1,3105 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mtkn1.github.io/vscode-docs-ja/release-notes/v1_94/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../v1_95/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/logo-stable.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35+insiders-4.53.13">
+    
+    
+      
+        <title>2024 年 9 月 (バージョン 1.94) - vscode-docs-ja</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.52c0e027.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="2024 年 9 月 (バージョン 1.94) - vscode-docs-ja" />
+<meta property="og:image" content="https://mtkn1.github.io/vscode-docs-ja/assets/images/social/release-notes/v1_94.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://mtkn1.github.io/vscode-docs-ja/release-notes/v1_94/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="2024 年 9 月 (バージョン 1.94) - vscode-docs-ja" />
+<meta property="twitter:image" content="https://mtkn1.github.io/vscode-docs-ja/assets/images/social/release-notes/v1_94.png" />
+</head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2024-9-194" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="vscode-docs-ja" class="md-header__button md-logo" aria-label="vscode-docs-ja" data-md-component="logo">
+      
+  <img src="../../images/logo-stable.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            vscode-docs-ja
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2024 年 9 月 (バージョン 1.94)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MtkN1/vscode-docs-ja" title="リポジトリへ" class="md-source" data-md-component="source" target="_blank" rel="noopener">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MtkN1/vscode-docs-ja
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  vscode-docs-ja
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Release notes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="vscode-docs-ja" class="md-nav__button md-logo" aria-label="vscode-docs-ja" data-md-component="logo">
+      
+  <img src="../../images/logo-stable.png" alt="logo">
+
+    </a>
+    vscode-docs-ja
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MtkN1/vscode-docs-ja" title="リポジトリへ" class="md-source" data-md-component="source" target="_blank" rel="noopener">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MtkN1/vscode-docs-ja
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    vscode-docs-ja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Release notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Release notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    2024 年 9 月 (バージョン 1.94)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    2024 年 9 月 (バージョン 1.94)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub Copilot
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Copilot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        チャットで言語モデルを切り替える
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt-4o" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GPT-4o をインライン チャットで使用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        チャットでの公開コードの一致
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        チャットでのファイル提案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        チャット応答でのファイル リンクの改善
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag-and-drop-files-to-add-chat-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ファイルをドラッグ アンド ドロップしてチャット コンテキストを追加する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        履歴に含まれるファイルの添付
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inline-chat-and-completions-in-python-native-repl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python ネイティブ REPL でのインライン チャットと補完
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ノートブックで生成されたコードを受け入れて実行する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ノートブック チャットで変数を添付する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        更新されたチャット ユーザー エクスペリエンス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        セマンティック検索結果 (プレビュー)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テストの失敗を修正する (プレビュー)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自動テスト セットアップ (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        チャットからデバッグを開始する (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コマンド センターでのチャット (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        改善された時間的コンテキスト (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カスタム命令 (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アクセシビリティ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="アクセシビリティ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        はじめに
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コメントのアクセシビリティの改善
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ワークベンチ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ワークベンチ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-an-extensions-account-preference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拡張機能のアカウント優先設定を変更する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プロファイルに関連付けられたフォルダーとワークスペースを表示する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        すべてのプロファイルで拡張機能を更新する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拡張機能ビューの警告
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-in-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エクスプローラーで検索
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リリース ノート
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エディター
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エディター">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        インレイ ヒントの改善
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実験的な編集コンテキスト
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ソース コントロール
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ソース コントロール">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ソース コントロール グラフ ビューの改善
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ソース コントロール グラフ ビューの改善">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リポジトリ ピッカー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        履歴アイテム参照ピッカー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        履歴アイテム アクション
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ソース コントロール グラフの設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ノートブック
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ノートブック">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        セル間のマルチカーソル サポート (プレビュー)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diff エディターはドキュメント メタデータの変更を表示します
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diff_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diff ビューで変更されていない領域を折りたたむ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web ワーカーでのノートブックのシリアル化 (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デバッグ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="デバッグ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        データのカラー化のサポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JavaScript デバッガー
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JavaScript デバッガー">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTML 要素の表示の改善
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        起動構成での Node コマンドの自動補完
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        クリーンな読み込まれたソース ビュー
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        言語
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="言語">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typescript-56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TypeScript 5.6
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TypeScript 5.6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一部の一般的な「常に真」のプログラミング ミスの検出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リージョン優先の診断
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript-typescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JavaScript および TypeScript のコミット文字の改善
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自動インポートの除外パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リモート開発
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拡張機能への貢献
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拡張機能への貢献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カバレッジを使用してテストを実行する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python のデフォルトの問題マッチャー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-repl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python ターミナル REPL でのシェル統合
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pylance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pylance 言語サーバー モード
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub プル リクエスト
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拡張機能の作成
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拡張機能の作成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デスクトップ アプリのカスタム アロケーターを削除する
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デバッグ アダプター プロトコル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プレビュー機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プレビュー機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        複数の GitHub アカウント
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msal-microsoft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSAL ベースの Microsoft 認証
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typescript-57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TypeScript 5.7
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        提案された API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="提案された API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        言語モデルのツール
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エンジニアリング
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エンジニアリング">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esm-is-shipping-for-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ESM は VS Code 用に出荷されています
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デフォルトのパッケージ マネージャーとして NPM を使用する
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注目の修正
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ありがとう
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ありがとう">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        問題追跡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プルリクエスト
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v1_95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    2024 年 10 月 (バージョン 1.95)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub Copilot
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Copilot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        チャットで言語モデルを切り替える
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt-4o" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GPT-4o をインライン チャットで使用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        チャットでの公開コードの一致
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        チャットでのファイル提案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        チャット応答でのファイル リンクの改善
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag-and-drop-files-to-add-chat-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ファイルをドラッグ アンド ドロップしてチャット コンテキストを追加する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        履歴に含まれるファイルの添付
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inline-chat-and-completions-in-python-native-repl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python ネイティブ REPL でのインライン チャットと補完
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ノートブックで生成されたコードを受け入れて実行する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ノートブック チャットで変数を添付する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        更新されたチャット ユーザー エクスペリエンス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        セマンティック検索結果 (プレビュー)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テストの失敗を修正する (プレビュー)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自動テスト セットアップ (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        チャットからデバッグを開始する (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コマンド センターでのチャット (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        改善された時間的コンテキスト (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カスタム命令 (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アクセシビリティ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="アクセシビリティ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        はじめに
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コメントのアクセシビリティの改善
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ワークベンチ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ワークベンチ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-an-extensions-account-preference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拡張機能のアカウント優先設定を変更する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プロファイルに関連付けられたフォルダーとワークスペースを表示する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        すべてのプロファイルで拡張機能を更新する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拡張機能ビューの警告
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-in-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エクスプローラーで検索
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リリース ノート
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エディター
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エディター">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        インレイ ヒントの改善
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実験的な編集コンテキスト
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ソース コントロール
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ソース コントロール">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ソース コントロール グラフ ビューの改善
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ソース コントロール グラフ ビューの改善">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リポジトリ ピッカー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        履歴アイテム参照ピッカー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        履歴アイテム アクション
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ソース コントロール グラフの設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ノートブック
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ノートブック">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        セル間のマルチカーソル サポート (プレビュー)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diff エディターはドキュメント メタデータの変更を表示します
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diff_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diff ビューで変更されていない領域を折りたたむ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web ワーカーでのノートブックのシリアル化 (実験的)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デバッグ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="デバッグ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        データのカラー化のサポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JavaScript デバッガー
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JavaScript デバッガー">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTML 要素の表示の改善
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        起動構成での Node コマンドの自動補完
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        クリーンな読み込まれたソース ビュー
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        言語
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="言語">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typescript-56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TypeScript 5.6
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TypeScript 5.6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一部の一般的な「常に真」のプログラミング ミスの検出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リージョン優先の診断
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript-typescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JavaScript および TypeScript のコミット文字の改善
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自動インポートの除外パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リモート開発
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拡張機能への貢献
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拡張機能への貢献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カバレッジを使用してテストを実行する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python のデフォルトの問題マッチャー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-repl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python ターミナル REPL でのシェル統合
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pylance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pylance 言語サーバー モード
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub プル リクエスト
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拡張機能の作成
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拡張機能の作成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デスクトップ アプリのカスタム アロケーターを削除する
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デバッグ アダプター プロトコル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プレビュー機能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プレビュー機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        複数の GitHub アカウント
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msal-microsoft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSAL ベースの Microsoft 認証
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typescript-57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TypeScript 5.7
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        提案された API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="提案された API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        言語モデルのツール
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エンジニアリング
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エンジニアリング">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esm-is-shipping-for-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ESM は VS Code 用に出荷されています
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デフォルトのパッケージ マネージャーとして NPM を使用する
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注目の修正
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ありがとう
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ありがとう">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        問題追跡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プルリクエスト
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="ナビゲーション" >
+    <ol class="md-path__list">
+      
+        
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    vscode-docs-ja
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Release notes
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/MtkN1/vscode-docs-ja/edit/main/docs/release-notes/v1_94.md" title="編集" class="md-content__button md-icon" target="_blank" rel="noopener">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/MtkN1/vscode-docs-ja/raw/main/docs/release-notes/v1_94.md" title="このページの原文を表示" class="md-content__button md-icon" target="_blank" rel="noopener">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="2024-9-194">2024 年 9 月 (バージョン 1.94)<a class="headerlink" href="#2024-9-194" title="Permanent link">&para;</a></h1>
+<p><strong>アップデート 1.94.1</strong>: このアップデートはこのセキュリティ <a href="https://github.com/microsoft/vscode/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22September+2024+Recovery+1%22+" target="_blank" rel="noopener">問題</a> に対処します。</p>
+<p><strong>アップデート 1.94.2</strong>: このアップデートはこれらの <a href="https://github.com/microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22September+2024+Recovery+2%22+is%3Aclosed" target="_blank" rel="noopener">問題</a> に対処します。</p>
+<!-- DOWNLOAD_LINKS_PLACEHOLDER -->
+
+<hr />
+<p>Visual Studio Code の 2024 年 9 月リリースへようこそ。このバージョンには多くの更新が含まれており、いくつかの主要なハイライトは次のとおりです:</p>
+<ul>
+<li><a href="#find-in-explorer">エクスプローラーで検索</a> - 改良された検索コントロールでエクスプローラー ビュー内のファイルをすばやく見つけます。</li>
+<li><a href="#source-control">ソース コントロール グラフ</a> - ソース コントロール グラフでのフィルタリング オプションとインタラクティビティの向上。</li>
+<li><a href="#python">Python テスト カバレッジ</a> - カバレッジを使用して Python テストを実行し、エディターでリッチな結果を取得します。</li>
+<li><a href="#esm-is-shipping-for-vs-code">ESM</a> - ESM への移行により、VS Code の起動が高速化されました。</li>
+<li><a href="#change-an-extensions-account-preference">アカウントの優先設定</a> - 拡張機能に使用するアカウントを指定します。</li>
+<li><a href="#inline-chat-and-completions-in-python-native-repl">ネイティブ REPL での Copilot</a> - ネイティブ REPL でコード補完とインライン チャットを取得します。</li>
+<li><a href="#drag-and-drop-files-to-add-chat-context">改善されたチャット コンテキスト</a> - ファイルをドラッグ アンド ドロップするか、IntelliSense を使用して、より関連性の高いチャット コンテキストを取得します。</li>
+<li><a href="#automated-test-setup-override">テスト環境のセットアップ</a> - ワークスペースのテスト フレームワークのセットアップを支援します。</li>
+</ul>
+<blockquote>
+<p>これらのリリース ノートをオンラインで読みたい場合は、<a href="https://code.visualstudio.com" target="_blank" rel="noopener">code.visualstudio.com</a> の <a href="https://code.visualstudio.com/updates" target="_blank" rel="noopener">更新プログラム</a> にアクセスしてください。
+<strong>Insiders:</strong> できるだけ早く新機能を試してみたいですか? ナイトリー <a href="https://code.visualstudio.com/insiders" target="_blank" rel="noopener">Insiders</a> ビルドをダウンロードして、最新の更新プログラムをすぐに試すことができます。</p>
+</blockquote>
+<h2 id="github-copilot">GitHub Copilot<a class="headerlink" href="#github-copilot" title="Permanent link">&para;</a></h2>
+<h3 id="_1">チャットで言語モデルを切り替える<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>以前、<a href="https://github.com/o1-waitlist-signup" target="_blank" rel="noopener">OpenAI o1 モデルへの早期アクセスにサインアップ</a> できることを発表しました。アクセス権を取得すると、VS Code の Copilot Chat でチャット会話に使用するモデル バージョンを選択するための Copilot Chat モデル ピッカー コントロールが表示されます。</p>
+<p><img alt="Copilot モデル ピッカー コントロールを使用すると、チャットで別の言語モデルに切り替えることができます。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/copilot-model-picker.png"></p>
+<h3 id="gpt-4o">GPT-4o をインライン チャットで使用<a class="headerlink" href="#gpt-4o" title="Permanent link">&para;</a></h3>
+<p>Copilot インライン チャットを GPT-4o にアップグレードしました。これにより、エディターでチャットを使用する際に、より高速で正確かつ高品質なコードと説明を提供します。</p>
+<h3 id="_2">チャットでの公開コードの一致<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>GitHub Copilot が GitHub.com 上の公開されているコードと一致する可能性のあるコードを返すことを許可できます。この機能が <a href="https://docs.github.com/copilot/managing-copilot/managing-github-copilot-in-your-organization/setting-policies-for-copilot-in-your-organization/managing-policies-for-copilot-in-your-organization#policies-for-suggestion-matching" target="_blank" rel="noopener">組織向けサブスクリプション</a> または <a href="https://docs.github.com/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-copilot-policies-as-an-individual-subscriber#enabling-or-disabling-suggestions-matching-public-code" target="_blank" rel="noopener">個人向けサブスクリプショ</a> で有効になっている場合、Copilot コード補完は既に検出された一致の詳細を提供します。これで、Copilot Chat でもこれらの公開コードの一致を表示できるようになりました。</p>
+<p>この機能が組織のサブスクリプションまたは個人のサブスクリプションで有効になっている場合、応答の最後に <strong>一致を表示</strong> リンクが表示されることがあります。リンクを選択すると、エディターが開き、一致するコード参照の詳細が表示されます。</p>
+<p><img alt="チャット コード参照の例。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/code-references.png"></p>
+<p>GitHub Copilot の<a href="https://github.blog/news-insights/product-news/code-referencing-now-generally-available-in-github-copilot-and-with-microsoft-azure-ai/" target="_blank" rel="noopener">コード参照に関する詳細情報</a> は GitHub ブログでご覧いただけます。</p>
+<h3 id="_3">チャットでのファイル提案<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>チャット入力フィールドで <code>#&lt;filename&gt;</code> と入力すると、ファイル名の提案が表示され、プロンプトにコンテキストとしてすばやく添付できます。これは、ファイルの添付をサポートするチャットの場所 (チャット ビュー、クイック チャット、インライン チャット、ノートブック チャットなど) で機能します。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_94/chat-file-complete.mp4" title="ファイル名を入力するときのファイル提案" autoplay loop controls muted></video>
+
+<h3 id="_4">チャット応答でのファイル リンクの改善<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>Copilot 応答で言及されるワークスペース ファイル パスのレンダリングを改善しました。これらのパスは、<a href="https://code.visualstudio.com/docs/copilot/copilot-chat#_workspace" target="_blank" rel="noopener"><code>@workspace</code></a> 質問をするときに非常に一般的です。</p>
+<p>最初に気付くのは、ワークスペース ファイルへのパスにファイル アイコンが含まれるようになったことです。これにより、チャット応答で簡単に識別できます。ファイル アイコンは、現在の<a href="https://code.visualstudio.com/docs/getstarted/themes#_file-icon-themes" target="_blank" rel="noopener">ファイル アイコン テーマ</a> に基づいています。</p>
+<p><img alt="応答内のワークスペース ファイルへのパスは、ファイル アイコンを使用してレンダリングされます。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/copilot-path-overview.png"></p>
+<p>これらのパスはインタラクティブ リンクであるため、それらを選択するだけで対応するファイルが開きます。ファイルを新しいエディター グループで開くには、ドラッグ アンド ドロップを使用するか、<code>kbstyle(Shift)</code> を押しながらドロップしてテキスト エディターに挿入します。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_94/copilot-path-dnd.mp4" title="copilot からワークスペース ファイルをエディターにドラッグ アンド ドロップする" autoplay loop controls muted></video>
+
+<p>デフォルトでは、これらのリンクにはファイル名のみが表示されますが、リンクにカーソルを合わせると完全なファイル パスが表示されます。</p>
+<p><img alt="ワークスペース パスにカーソルを合わせて、完全なワークスペース パスを表示します。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/copilot-path-hover.png"></p>
+<p>また、これらのパスの 1 つを右クリックして、リソースへの相対パスをコピーしたり、オペレーティング システムのファイル エクスプローラーでファイルを表示したりするなどの追加コマンドを含むコンテキスト メニューを開くこともできます。</p>
+<p><img alt="チャット内のワークスペース パスのコンテキスト メニューには、ファイルを開いたり、パスをコピーしたりするオプションが用意されています。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/copilot-path-right-click.png"></p>
+<p>今後のイテレーションでワークスペース パスのレンダリングをさらに改善し、応答内のシンボル名にも同様の改善を行う予定です。</p>
+<h3 id="drag-and-drop-files-to-add-chat-context">ファイルをドラッグ アンド ドロップしてチャット コンテキストを追加する<a class="headerlink" href="#drag-and-drop-files-to-add-chat-context" title="Permanent link">&para;</a></h3>
+<p>ワークベンチからファイルやエディター タブをチャットに直接ドラッグすることで、チャット プロンプトのコンテキストとして追加のファイルを簡単に添付できるようになりました。インライン キャットの場合、<code>kbstyle(Shift)</code> を押しながらファイルをドロップして、エディターで開くのではなくコンテキストとして追加します。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_94/copilot-attach-dnd.mp4" title="ファイルとエディターをチャットにドラッグする" autoplay loop controls muted></video>
+
+<h3 id="_5">履歴に含まれるファイルの添付<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>チャット リクエストの関連コンテキストとしてファイルまたはエディター選択を添付する方法は複数あります。以前は、このコンテキストは現在のリクエストにのみ追加され、フォローオン リクエストの履歴には含まれていませんでした。現在、これらの添付ファイルは履歴に保持されているため、再添付することなく参照し続けることができます。</p>
+<p><img alt="Copilot は、添付ファイルを複数のプロンプトにわたって追跡することを示すチャット会話。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/file-attachment.png"></p>
+<h3 id="inline-chat-and-completions-in-python-native-repl">Python ネイティブ REPL でのインライン チャットと補完<a class="headerlink" href="#inline-chat-and-completions-in-python-native-repl" title="Permanent link">&para;</a></h3>
+<p>Python 拡張機能で使用されるネイティブ REPL エディターは、入力ボックスで Copilot インライン チャットとコード補完をサポートするようになりました。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_94/copilot-in-REPL.mp4" title="ネイティブ REPL エディターで Copilot インライン チャットを使用する" autoplay loop controls muted></video>
+
+<h3 id="_6">ノートブックで生成されたコードを受け入れて実行する<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>Copilot インライン チャットを使用してノートブックでコードを生成する場合、インライン チャットから生成されたコードを受け入れて直接実行できます。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_94/notebook-accept-run.mp4" title="インライン チャットから生成されたコードを受け入れて実行する" autoplay loop controls muted></video>
+
+<h3 id="_7">ノートブック チャットで変数を添付する<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>ノートブックで Copilot を使用する場合、Jupyter カーネルから変数をリクエストに添付できるようになりました。変数を追加すると、チャット リクエストのコンテキストをより正確に制御できるため、Copilot からより関連性の高い応答を得ることができます。</p>
+<p><code>#</code> と入力し、続けて変数名を入力するか、インライン チャットで 📎 コントロール (<code>kb(workbench.action.chat.attachContext)</code>) を使用してコンテキスト変数を追加します。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_94/notebook-kernel-variable.mp4" title="ノートブック チャット リクエストで `#` を使用してコンテキスト変数を添付する" autoplay loop controls muted></video>
+
+<h3 id="_8">更新されたチャット ユーザー エクスペリエンス<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>クリーンな新しいウェルカム エクスペリエンスでチャット ビューを更新し、チャット入力エリアのレイアウトを更新しました。<code>@</code> ボタンを使用して、インストールした拡張機能からの組み込みのチャット参加者とスラッシュ コマンドの両方のリストを簡単に見つけることができるようになりました。チャット入力ボックスに <code>/</code> または <code>@</code> を入力して、参加者やスラッシュ コマンドを見つけることもできます。</p>
+<p><img alt="更新されたチャット ビューのウェルカム エクスペリエンス。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/chat-welcome.png"></p>
+<h3 id="_9">セマンティック検索結果 (プレビュー)<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p><strong>設定</strong>: <code>setting(github.copilot.chat.search.semanticTextResults)</code></p>
+<p>検索ビューを使用すると、ファイル全体で正確な検索を実行できます。Copilot を使用して、意味的に関連する検索結果を提供する機能を検索ビューに追加しました。</p>
+<video controls src="https://code.visualstudio.com/assets/updates/1_94/semantic-search-in-search-view.mp4" title="検索ビューでのセマンティック検索" autoplay loop controls muted></video>
+
+<p>この機能はまだプレビュー段階であり、デフォルトでは設定が有効になっていません。ぜひ試してみて、フィードバックをお寄せください。</p>
+<h3 id="_10">テストの失敗を修正する (プレビュー)<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p><strong>設定</strong>: <code>setting(github.copilot.chat.fixTestFailure.enabled)</code></p>
+<p>失敗した単体テストの診断を支援するための特別なロジックを追加しました。このロジックは、いくつかのシナリオで <code>/fix</code> スラッシュ コマンドによってトリガーされます。また、<code>/fixTestFailure</code> スラッシュ コマンドを直接呼び出すこともできます。このコマンドはデフォルトでチャットで有効になっていますが、設定 <code>setting(github.copilot.chat.fixTestFailure.enabled)</code> を使用して無効にすることもできます。</p>
+<h2 id="automated-test-setup-override"><div id="_automated-test-setup-override"/></h2>
+
+<h3 id="_11">自動テスト セットアップ (実験的)<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p><strong>設定</strong>: <code>setting(github.copilot.chat.experimental.setupTests.enabled)</code></p>
+<p>ワークスペースのテスト セットアップを構成するのに役立つ実験的な <code>/setupTests</code> スラッシュ コマンドを追加しました。このコマンドは、テスト フレームワークを推奨し、それをセットアップおよび構成する手順を提供し、VS Code で<a href="https://code.visualstudio.com/docs/editor/testing" target="_blank" rel="noopener">テスト統合を提供する</a> VS Code 拡張機能を提案できます。これにより、コードのテストを開始するための時間と労力を節約できます。</p>
+<p>コードのテストを生成するために <code>/tests</code> コマンドを使用する場合、ワークスペースでそのような統合がまだ設定されていないように見える場合、<code>/setupTests</code> とテスト拡張機能を推奨できます。</p>
+<h3 id="_12">チャットからデバッグを開始する (実験的)<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p><strong>設定</strong>: <code>setting(github.copilot.chat.experimental.startDebugging.enabled)</code></p>
+<p>このマイルストーンでは、実験的な <code>/startDebugging</code> スラッシュ コマンドの改善を行いました。このコマンドを使用すると、起動構成を簡単に見つけたり作成したりして、アプリケーションの<a href="https://code.visualstudio.com/docs/editor/debugging" target="_blank" rel="noopener">デバッグ</a>をシームレスに開始できます。Copilot Chat で <code>@vscode</code> を使用すると、<code>/startDebugging</code> がデフォルトで使用できるようになりました。</p>
+<p><img alt="ユーザーがパネル チャットで /startDebugging flask app port 3000 と入力し、起動構成が提供されます。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/start-debugging.png"></p>
+<h3 id="_13">コマンド センターでのチャット (実験的)<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p><strong>設定</strong>: <code>setting(chat.commandCenter.enabled)</code></p>
+<p>コマンド センター エントリを使用してチャットにアクセスする実験を行っています。これにより、さまざまなチャット エクスペリエンスを開始したり、プロンプトにコンテキストを添付したりするなど、関連するすべてのチャット コマンドにすばやくアクセスできます。コマンド センター自体が有効になっている必要があることに注意してください。チャット コマンド センター エントリを表示します。</p>
+<p><img alt="チャット コマンド センター ボタンと、関連するチャット アクションを含むドロップダウン メニュー。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/chat-command-center.png"></p>
+<h3 id="_14">改善された時間的コンテキスト (実験的)<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p><strong>設定</strong>: <code>setting(github.copilot.chat.experimental.temporalContext.enabled)</code></p>
+<p>時間的コンテキストを使用すると、インライン チャットに最近開いたファイルや編集したファイルをチャット コンテキストの一部として考慮するように指示できます。この機能を改善しましたので、ぜひお試しください。</p>
+<h3 id="_15">カスタム命令 (実験的)<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p><strong>設定</strong>: <code>setting(github.copilot.chat.experimental.codeGeneration.useInstructionFiles)</code></p>
+<p><strong>設定</strong>: <code>setting(github.copilot.chat.experimental.testGeneration.instructions)</code></p>
+<p>前回のマイルストーンでは、カスタム<a href="https://code.visualstudio.com/updates/v1_93#_code-generation-instructions" target="_blank" rel="noopener">コード生成命令</a>を導入しました。この機能をさらに拡張して、ワークスペースの <code>.github/copilot-instructions.md</code> ファイルに**共有命令**を定義できるようにしました。これらの共通命令は、個人のコード生成命令を補完します。<code>setting(github.copilot.chat.experimental.codeGeneration.useInstructionFiles)</code> 設定を使用して、コード生成命令ファイルを有効にします。</p>
+<p>さらに、**テスト生成**の命令を設定で定義したり、ファイルからインポートしたりできるようになりました。たとえば、常に特定の単体テスト フレームワークをテストに使用する場合などです。<code>setting(github.copilot.chat.experimental.testGeneration.instructions)</code> 設定でテスト生成命令を構成します。</p>
+<h2 id="_16">アクセシビリティ<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<h3 id="_17">はじめに<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p><strong>ヘルプ</strong> メニューには <strong>アクセシビリティ機能の概要</strong> ウォークスルーが含まれており、アクセシビリティ オプションを簡単に探索して利用できるようになりました。このウォークスルーでは、アクセシビリティ ヘルプ ダイアログ、アクセシビリティ シグナル、キーボード ショートカットなどの機能を紹介します。</p>
+<p><img alt="アクセシビリティ機能の概要製品ウォークスルー。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/accessibility-walkthrough.png"></p>
+<h3 id="_18">コメントのアクセシビリティの改善<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>コメント スレッド コントロールのアクセシブル ビューを導入しました。このビューには関連するエディター コンテキストが含まれており、エディターとアクセシブル ビューを切り替えることなく集中して作業を続けることができます。同様に、コメント パネルのアクセシブル ビューにもエディター コンテキストが提供されます。</p>
+<p>また、キーボードを使用してエディターからコメント コントロールにすばやく移動できる <strong>コメント: 現在の行のコメントにフォーカス</strong> コマンドを導入しました。エディター内の次のコメント範囲と前のコメント範囲に移動するための新しいアクションもあります: <strong>コメント: 次のコメント範囲に移動</strong> および <strong>コメント: 前のコメント範囲に移動</strong>。</p>
+<h2 id="_19">ワークベンチ<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<h3 id="change-an-extensions-account-preference">拡張機能のアカウント優先設定を変更する<a class="headerlink" href="#change-an-extensions-account-preference" title="Permanent link">&para;</a></h3>
+<p>このイテレーションでは、拡張機能の優先アカウントを変更するエクスペリエンスを改善する方法を検討しました。たとえば、複数の GitHub アカウントを持っていて、誤って間違ったアカウントで GitHub Copilot にサインインしてしまい、別のアカウントを使用する必要がある場合などです。</p>
+<p>事後にその優先設定を変更することが可能になりました。</p>
+<ul>
+<li><strong>アクティビティ バーのアカウント メニュー</strong> &gt; <strong>&lt;Your Account&gt;</strong> &gt; <strong>信頼された拡張機能の管理</strong> &gt; 拡張機能の歯車アイコンを選択</li>
+</ul>
+<p><img alt="信頼された拡張機能のクイック ピックを管理し、歯車ボタンを強調表示します。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/accountPreferenceManageTrustedExtensions.png"></p>
+<ul>
+<li><strong>拡張機能</strong> ビュー &gt; 認証を使用する拡張機能のコンテキスト メニュー (または歯車アイコン) &gt; <strong>アカウント優先設定</strong> を選択</li>
+</ul>
+<p><img alt="拡張機能のコンテキスト メニューのアカウント優先設定オプション。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/accountPreferenceContextMenu.png"></p>
+<ul>
+<li>拡張機能の詳細ビュー &gt; 歯車アイコン &gt; <strong>アカウント優先設定</strong> を選択</li>
+</ul>
+<p><img alt="拡張機能の歯車メニューのアカウント優先設定オプション。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/accountPreferenceGear.png"></p>
+<p>これらのオプションのいずれかを選択すると、拡張機能が使用するアカウントを変更できるクイック ピックに移動します。</p>
+<p><img alt="アカウント優先設定クイック ピックにより、特定のアカウントの拡張機能を選択できます。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/accountPreferenceQuickPick.png"></p>
+<p>拡張機能のアカウント優先設定を変更すると、拡張機能にイベントが送信され、拡張機能が適切に処理する必要があります。期待どおりの動作が見られない場合は、その拡張機能に対して問題を報告して、アカウント優先設定エクスペリエンスを処理できるようにしてください。</p>
+<p>このフローに関するフィードバックがあればお知らせください。</p>
+<h3 id="_20">プロファイルに関連付けられたフォルダーとワークスペースを表示する<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>このマイルストーンでは、プロファイル エディターに <strong>フォルダーとワークスペース</strong> セクションを導入しました。このセクションには、特定のプロファイルに関連付けられたすべてのフォルダーとワークスペースが中央の場所に一覧表示されます。このセクションから、フォルダーを追加または変更したり、フォルダーやワークスペースを新しいウィンドウで開いたりできます。</p>
+<p><img alt="プロファイル エディターのフォルダーとワークスペース セクション。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/profiles-editor-folders-workspaces.png"></p>
+<h3 id="_21">すべてのプロファイルで拡張機能を更新する<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>このマイルストーンでは、すべてのプロファイルで拡張機能を更新する機能を導入しました。複数のプロファイルがあり、拡張機能のバージョンを同期させたい場合に便利です。以前は、各プロファイルに切り替えて、そのプロファイルの拡張機能を更新する必要がありました。</p>
+<h3 id="_22">拡張機能ビューの警告<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p>拡張機能ビューには、無効な拡張機能やバージョンの非互換性のために無効になっている拡張機能がある場合に、警告バッジと関連情報が表示されるようになりました。</p>
+<p><img alt="拡張機能ビューには、警告バッジと警告に関する説明が表示されます。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/extensions-warning-ux.png"></p>
+<h3 id="find-in-explorer">エクスプローラーで検索<a class="headerlink" href="#find-in-explorer" title="Permanent link">&para;</a></h3>
+<p>エクスプローラー ビューの検索機能を改善し、大規模なプロジェクトでファイルを検索しやすくしました。<code>kb(list.find)</code> キーボード ショートカットを使用して、ファイル エクスプローラーで検索コントロールを開くことができます。検索中は、柔軟な結果を得るために、あいまい一致と連続一致を切り替えることができます。</p>
+<p>一部のコンテキスト メニュー アクションは検索中に一時的に無効になります。今後の改善にご期待ください!</p>
+<video src="https://code.visualstudio.com/assets/updates/1_94/file-explorer-find.mp4" title="エクスプローラー検索でファイルを検索する" autoplay loop controls muted></video>
+
+<h3 id="_23">リリース ノート<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p>リリース ノートで設定を参照するための簡略化された構文 (<code>setting(setting.name)</code>) があり、リリース ノート エディターに表示されるときにおなじみの設定ギアのレンダリングも行われます。</p>
+<p><img alt="リリース ノートの設定 URL により、設定エディターに直接移動できます。" src="../../assets/external/code.visualstudio.com/assets/updates/1_92/setting-url-in-release-notes.gif"></p>
+<h2 id="_24">エディター<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h2>
+<h3 id="_25">インレイ ヒントの改善<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<p><code>setting(editor.inlayHints.maximumLength)</code> 設定を追加しました。この設定は、インレイ ヒントが切り捨てられる文字数を制御します。</p>
+<p>インレイ ヒントの更新戦略も見直し、入力中にインレイ ヒントが早く更新されるようにしましたが、カーソルの水平移動は発生しません。</p>
+<h3 id="_26">実験的な編集コンテキスト<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<p>このマイルストーンでは、新しい実験的な設定 <code>setting(editor.experimentalEditContextEnabled)</code> を導入しました。この設定により、VS Code の編集エクスペリエンスを強化するために <a href="https://www.w3.org/TR/edit-context/" target="_blank" rel="noopener">EditContext API</a> が有効になります。<a href="https://www.w3.org/TR/edit-context/" target="_blank" rel="noopener">EditContext API</a> の採用により、特定の IME 構成バグを修正できました。一般的に、長期的には編集エクスペリエンスが向上すると考えており、最終的にはデフォルトで有効にする予定です。</p>
+<p>この設定を有効にした後、VS Code ウィンドウを再読み込みして、この設定を利用してください。</p>
+<h2 id="source-control">ソース コントロール<a class="headerlink" href="#source-control" title="Permanent link">&para;</a></h2>
+<h3 id="_27">ソース コントロール グラフ ビューの改善<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p>前回のマイルストーンでは、新しい <strong>ソース コントロール グラフ</strong> ビューを追加しました。このマイルストーンでは、新しく追加されたビューで利用可能な機能を拡張し、ビューのレイアウトを磨く作業を行いました。</p>
+<h4 id="_28">リポジトリ ピッカー<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h4>
+<p>複数のリポジトリを含むフォルダー/ワークスペースを開くと、ソース コントロール グラフ ビューのタイトルにリポジトリ ピッカーが表示されます。デフォルトでは、ソース コントロール グラフ ビューはステータス バーの情報に一致するアクティブなリポジトリを表示します。リポジトリ ピッカーを使用して、ソース コントロール グラフ ビューを特定のリポジトリに*ロック*できます。</p>
+<p><img alt="ソース コントロール グラフ ビューのタイトルにあるリポジトリ ピッカー コントロール。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/scm-repository-picker-button.png"></p>
+<h4 id="_29">履歴アイテム参照ピッカー<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h4>
+<p>このマイルストーンでは、ソース コントロール グラフ ビューのタイトルに新しい履歴アイテム参照ピッカーを追加しました。この参照ピッカーを使用して、グラフに表示される履歴アイテムを別のブランチにフィルタリングしたり、複数のブランチを表示したりできます。</p>
+<p><img alt="履歴アイテム参照クイック ピック コントロールを使用して、1 つ以上のアイテムを選択します。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/scm-reference-quick-pick.png"></p>
+<p>デフォルトでは、履歴アイテム参照ピッカーは <code>Auto</code> に設定されており、現在の履歴アイテム参照、そのリモート、およびオプションのベースのグラフがレンダリングされます。</p>
+<p><img alt="ソース コントロール グラフ ビューのタイトルにある履歴アイテム参照ピッカー コントロール。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/scm-reference-picker-button.png"></p>
+<h4 id="_30">履歴アイテム アクション<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h4>
+<p>このマイルストーンでは、ソース コントロール履歴アイテムのコンテキスト メニューで利用できるアクションのリストを拡張しました。履歴アイテムから新しいブランチ/タグを作成したり、履歴アイテムをチェリーピックしたり、アイテムをチェックアウト (デタッチ) したりするアクションを追加しました。</p>
+<p><img alt="ソース コントロール グラフ ビューのアイテムのコンテキスト メニュー。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/scm-context-menu.png"></p>
+<h4 id="_31">ソース コントロール グラフの設定<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h4>
+<p>このマイルストーンでは、グラフをカスタマイズできるようにするための新しい設定セットを追加しました:</p>
+<ul>
+<li><code>setting(scm.graph.badges)</code> - ソース コントロール グラフ ビューに表示されるバッジを制御します</li>
+<li><code>setting(scm.graph.pageOnScroll)</code> - ソース コントロール グラフ ビューがリストの最後までスクロールしたときに次のページのアイテムを読み込むかどうかを制御します</li>
+<li><code>setting(scm.graph.pageSize)</code> - ソース コントロール グラフ ビューに表示されるデフォルトのアイテム数と、さらに多くのアイテムを読み込むときのアイテム数</li>
+</ul>
+<h2 id="_32">ノートブック<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h2>
+<h3 id="_33">セル間のマルチカーソル サポート (プレビュー)<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<p>ノートブック エディターは、<code>setting(notebook.multiCursor.enabled:true)</code> 設定を使用して、セル間のマルチカーソル編集をサポートするようになりました。現在、これはショートカット <code>kbstyle(Ctrl+D)</code> でのみトリガーされ、コア エディター アクションと限られたサブセットのエディター コマンドをサポートします。</p>
+<video src="https://code.visualstudio.com/assets/updates/1_94/notebook-multi-cursor.mp4" title="ノートブックのマルチカーソル デモ" autoplay loop controls muted></video>
+
+<h3 id="diff">Diff エディターはドキュメント メタデータの変更を表示します<a class="headerlink" href="#diff" title="Permanent link">&para;</a></h3>
+<p>ノートブックの diff エディターは、カーネル情報やセル言語など、ドキュメント メタデータに加えられた変更も表示するようになりました。</p>
+<p><img alt="ドキュメント メタデータの並べて表示される変更を示すノートブック diff エディター。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/notebook-diff-document-metadata.png"></p>
+<h3 id="diff_1">Diff ビューで変更されていない領域を折りたたむ<a class="headerlink" href="#diff_1" title="Permanent link">&para;</a></h3>
+<p>ノートブックの diff ビューは、設定 <code>setting(diffEditor.hideUnchangedRegions.enabled)</code> を尊重するようになりました。有効にすると、変更されていないコード ブロックはデフォルトで折りたたまれるため、大規模なノートブックの変更を確認しやすくなります。</p>
+<p><img alt="Diff エディターは、変更されていないコード ブロックを折りたたんで表示します。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/notebook-unchanged-region.png"></p>
+<h3 id="web">Web ワーカーでのノートブックのシリアル化 (実験的)<a class="headerlink" href="#web" title="Permanent link">&para;</a></h3>
+<p>このリリースでは、ノートブックのシリアル化を Web ワーカーで実行する実験的な機能を導入しました。これにより、大規模なノートブックを操作する際に、拡張機能ホスト プロセスのメイン スレッドのブロック時間を短縮できます。デフォルトではこの機能は無効になっていますが、<code>setting(ipynb.experimental.serialization:true)</code> を <code>true</code> に設定することで有効にできます。</p>
+<h2 id="_34">デバッグ<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h2>
+<h3 id="_35">データのカラー化のサポート<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<p>VS Code は、デバッグ アダプター プロトコルからの新しいテキスト スタイリング機能をサポートしています。これにより、変数ビュー、ウォッチ ビュー、ホバー、およびデバッグ コンソール内のデータを ANSI エスケープ シーケンスを使用してカラー化できます。</p>
+<h3 id="javascript">JavaScript デバッガー<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h3>
+<h4 id="html">HTML 要素の表示の改善<a class="headerlink" href="#html" title="Permanent link">&para;</a></h4>
+<p>JavaScript デバッガーでの HTML 要素の表示方法を改善しました。以前は、ナイーブなオブジェクトとしてレンダリングされており、ナビゲートが困難でした。現在では、DOM 構造をより正確に反映し、新しいカラー化機能を活用して基本的な構文の強調表示を提供しています。</p>
+<p><img alt="HTML 要素は JavaScript デバッグ コンソールでカラー化されます。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/js-debug-html.png"></p>
+<h4 id="node">起動構成での Node コマンドの自動補完<a class="headerlink" href="#node" title="Permanent link">&para;</a></h4>
+<p><code>launch.json</code> ファイルには、<code>node_modules</code> にインストールされているコマンドライン アプリケーションの新しい自動補完ヘルパーが追加されました。これにより、<code>vitest</code> や <code>nest</code> などのツールのデバッグ設定が簡単になります。</p>
+<h4 id="_36">クリーンな読み込まれたソース ビュー<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h4>
+<p>Node.js の組み込みモジュール、評価されたスクリプト、および WebAssembly モジュールのソース パスの構造を変更して、<strong>読み込まれたソース</strong> ビューがノイズが少なく、参照しやすくしました。</p>
+<h2 id="_37">言語<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h2>
+<h3 id="typescript-56">TypeScript 5.6<a class="headerlink" href="#typescript-56" title="Permanent link">&para;</a></h3>
+<p>JavaScript および TypeScript のサポートは、現在 TypeScript 5.6 を使用しています。この主要なアップデートには、多くの言語およびツールの改善が含まれており、重要なバグ修正とパフォーマンスの最適化も行われています。</p>
+<p>TypeScript 5.6 リリースの詳細については、<a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/" target="_blank" rel="noopener">TypeScript ブログ</a> をご覧ください。以下のセクションでは、いくつかのツールのハイライトも紹介しています。</p>
+<h4 id="_38">一部の一般的な「常に真」のプログラミング ミスの検出<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h4>
+<p>JavaScript または TypeScript で正規表現を使用して次のようなコードを記述しているとします:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;...&#39;</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="sr">/\d+(\.\d+)?/</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>おっと! 正規表現で <code>.test()</code> を呼び出すのを忘れているようです。これにより、<code>if</code> 条件は常に true と評価されます。これは望ましい結果ではありません。</p>
+<p>この問題は指摘されると明らかですが、このようなミスは驚くほど簡単に発生し、VS Code でも実際のバグを引き起こしました! 幸いなことに、TypeScript はプログラム内の最も一般的な「常に真」のエラーのいくつかを報告するようになりました。これには、決して値にならない値に対して <code>if</code> 条件をテストする場合や、片側が到達不能な条件式 (たとえば <code>/abc/ ?? /xyz/</code>) などが含まれます。</p>
+<p>この機能の動作の詳細と例については、<a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/#disallowed-nullish-and-truthy-checks" target="_blank" rel="noopener">TypeScript リリース ノート</a> をご覧ください。</p>
+<h4 id="_39">リージョン優先の診断<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h4>
+<p>非常に長い JavaScript または TypeScript ファイルで作業していますか? リージョン優先の診断のおかげで、型エラーの診断が少し早く表示され始めるはずです。これにより、現在表示されているコードの診断を優先的に取得し、ファイル全体の診断がまだ計算中であっても、これらを最初に表示しようとします。</p>
+<p>この最適化は、数千行の複雑なファイルに最も関連性があります。小さなファイルでは変更が見られない場合があります。</p>
+<h4 id="javascript-typescript">JavaScript および TypeScript のコミット文字の改善<a class="headerlink" href="#javascript-typescript" title="Permanent link">&para;</a></h4>
+<p>コミット文字を使用すると、補完を自動的に受け入れることでコーディングを高速化できます。たとえば、JavaScript および TypeScript では、<code>.</code> はコミット文字と見なされることがよくあります。これにより、<code>myVariable.property.</code> を入力するには、<code>myv</code>、<code>.</code>、<code>p</code>、<code>.</code> と入力するだけで済みます。最初の <code>.</code> は <code>myVariable</code> の補完を受け入れ、2 番目の <code>.</code> は <code>property</code> の補完を受け入れます。</p>
+<p>これらのコミット文字は現在 TypeScript によって計算されているため、プログラムの構造をより適切に考慮できます。今後もサポートを改善し続けることができます。</p>
+<p>コミット文字はデフォルトで有効になっていますが、<code>setting(editor.acceptSuggestionOnCommitCharacter: false)</code> を <code>false</code> に設定することで無効にできます。</p>
+<h4 id="_40">自動インポートの除外パターン<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h4>
+<p>新しい <code>autoImportSpecifierExcludeRegexes</code> を使用すると、正規表現を使用して特定のパッケージからの<a href="https://code.visualstudio.com/docs/typescript/typescript-editing#_auto-imports" target="_blank" rel="noopener">自動インポート</a>を除外できます。たとえば、lodash のサブディレクトリからの自動インポートを除外するには、次のように設定します:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;typescript.preferences.autoImportSpecifierExcludeRegexes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;^lodash/.*$&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>JavaScript の場合は <code>setting(javascript.preferences.autoImportSpecifierExcludeRegexes)</code> を、TypeScript の場合は <code>setting(typescript.preferences.autoImportSpecifierExcludeRegexes)</code> を使用してこれを構成できます。詳細については、<a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/#exclude-patterns-for-auto-imports" target="_blank" rel="noopener">TypeScript 5.6 リリース ノート</a> を参照してください。</p>
+<h2 id="_41">リモート開発<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h2>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack" target="_blank" rel="noopener">リモート開発拡張機能</a>を使用すると、<a href="https://code.visualstudio.com/docs/devcontainers/containers" target="_blank" rel="noopener">Dev Container</a>、SSH 経由のリモート マシンまたは<a href="https://code.visualstudio.com/docs/remote/tunnels" target="_blank" rel="noopener">リモート トンネル</a>、または<a href="https://learn.microsoft.com/windows/wsl" target="_blank" rel="noopener">Windows Subsystem for Linux</a> (WSL) を使用して、フル機能の開発環境を使用できます。</p>
+<p>ハイライトには次のものが含まれます:</p>
+<ul>
+<li>SSH/トンネル経由で Kubernetes コンテナーに接続する</li>
+<li>GPU の可用性を手動で指定する</li>
+</ul>
+<p>これらの機能の詳細については、<a href="https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_94.md" target="_blank" rel="noopener">リモート開発リリース ノート</a>をご覧ください。</p>
+<h2 id="_42">拡張機能への貢献<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h2>
+<h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<h4 id="_43">カバレッジを使用してテストを実行する<a class="headerlink" href="#_43" title="Permanent link">&para;</a></h4>
+<p>VS Code で Python テストをカバレッジで実行できるようになりました! カバレッジでテストを実行するには、テスト エクスプローラーでカバレッジ実行アイコンを選択するか、通常テスト実行をトリガーするメニューから「カバレッジで実行」を選択します。Python 拡張機能は、pytest を使用している場合は <a href="https://pypi.org/project/pytest-cov/" target="_blank" rel="noopener"><code>pytest-cov</code></a> プラグインを使用して、unittest の場合は <a href="http://coverage.py/" target="_blank" rel="noopener"><code>coverage.py</code></a> を使用してカバレッジを実行します。</p>
+<p>カバレッジ実行が完了すると、行レベルのカバレッジのためにエディター内の行が強調表示されます。これらは、下部の実行結果パネルで「テスト カバレッジを閉じる」または「テスト カバレッジを表示する」と表示される場所で閉じたり再度開いたりできます。さらに、テスト エクスプローラーのテスト タブの下にビーカー アイコン付きのテスト カバレッジ タブが表示され、<strong>テスト: テスト カバレッジ ビューにフォーカス</strong> でコマンド パレット (<code>kb(workbench.action.showCommands)</code>) で移動することもできます。このパネルでは、ワークスペース内の各ファイルおよびフォルダーの行およびブランチ カバレッジ メトリックを表示できます。</p>
+<p>カバレッジを使用して Python テストを実行する方法の詳細については、<a href="https://code.visualstudio.com/docs/python/testing#_run-tests-with-coverage" target="_blank" rel="noopener">Python ドキュメント</a>を参照してください。テスト カバレッジの一般的な情報については、VS Code の<a href="https://code.visualstudio.com/docs/editor/testing#_test-coverage" target="_blank" rel="noopener">テスト カバレッジ ドキュメント</a>を参照してください。</p>
+<h4 id="python_1">Python のデフォルトの問題マッチャー<a class="headerlink" href="#python_1" title="Permanent link">&para;</a></h4>
+<p>Python 拡張機能にはデフォルトの問題マッチャーが含まれており、Python コードの問題追跡が簡単になり、より多くのコンテキスト フィードバックが提供されます。これを統合するには、<code>task.json</code> のタスクに <code>"problemMatcher": "$python"</code> を追加します。問題マッチャーは、タスクの出力をスキャンしてエラーや警告を検出し、それらを問題パネルに表示して、開発ワークフローを強化します。</p>
+<p>以下は、Python のデフォルトの問題マッチャーを使用する <code>task.json</code> ファイルの例です:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.0.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tasks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Run Python&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;shell&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;${command:python.interpreterPath}&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="s2">&quot;${file}&quot;</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;problemMatcher&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;$python&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="python-repl">Python ターミナル REPL でのシェル統合<a class="headerlink" href="#python-repl" title="Permanent link">&para;</a></h4>
+<p>Python 拡張機能には、<code>python</code> を入力する前に実行される <code>PYTHONSTARTUP</code> スクリプトのオプトインおよびオプトアウトの設定が含まれています。または、ターミナルで Python REPL を起動する他の方法を使用します。オプトインすると、Mac または Linux にある場合、コマンド デコレーション、コマンドの再実行、最近のコマンドの実行など、ターミナル シェル統合の機能を使用できます。<code>setting(python.terminal.shellIntegration.enabled:true)</code> 設定を使用してこれを有効にできます。</p>
+<h4 id="pylance">Pylance 言語サーバー モード<a class="headerlink" href="#pylance" title="Permanent link">&para;</a></h4>
+<p><code>setting(python.analysis.languageServerMode)</code> という新しい設定があり、現在の IntelliSense エクスペリエンスとパフォーマンスに最適化された軽量なエクスペリエンスのどちらかを選択できます。</p>
+<p>IntelliSense 機能の全範囲を必要とせず、Pylance をできるだけリソースに優しいものにしたい場合は、<code>setting(python.analysis.languageServerMode)</code> を <code>light</code> に設定できます。それ以外の場合は、今日の Pylance でのエクスペリエンスを続けるには、<code>default</code> に設定します。</p>
+<p>この新しい機能は、次の設定のデフォルト値を上書きします:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">設定</th>
+<th style="text-align: left;"><code>light</code> モード</th>
+<th style="text-align: left;"><code>default</code> モード</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">"python.analysis.exclude"</td>
+<td style="text-align: left;">["**"]</td>
+<td style="text-align: left;">[]</td>
+</tr>
+<tr>
+<td style="text-align: left;">"python.analysis.useLibraryCodeForTypes"</td>
+<td style="text-align: left;">false</td>
+<td style="text-align: left;">true</td>
+</tr>
+<tr>
+<td style="text-align: left;">"python.analysis.enablePytestSupport"</td>
+<td style="text-align: left;">false</td>
+<td style="text-align: left;">true</td>
+</tr>
+<tr>
+<td style="text-align: left;">"python.analysis.indexing"</td>
+<td style="text-align: left;">false</td>
+<td style="text-align: left;">true</td>
+</tr>
+</tbody>
+</table>
+<p>上記の設定は、デフォルト値を上書きするために個別に変更することもできます。</p>
+<h3 id="github">GitHub プル リクエスト<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github" target="_blank" rel="noopener">GitHub プル リクエスト</a>拡張機能の進捗がさらに進みました。この拡張機能を使用すると、プル リクエストと問題を作成および管理できます。拡張機能の 0.98.0 リリースの<a href="https://github.com/microsoft/vscode-pull-request-github/blob/main/CHANGELOG.md#0980" target="_blank" rel="noopener">変更ログ</a>を確認して、ハイライトを確認してください。</p>
+<h2 id="_44">拡張機能の作成<a class="headerlink" href="#_44" title="Permanent link">&para;</a></h2>
+<h3 id="_45">デスクトップ アプリのカスタム アロケーターを削除する<a class="headerlink" href="#_45" title="Permanent link">&para;</a></h3>
+<p>このバージョンでは、バージョン 1.78 でデスクトップ アプリケーション拡張機能ホストに追加されたカスタム アロケーターを削除しました。このカスタム アロケーターは、Electron ランタイムに対してビルドされた V8 サンドボックスと互換性のない Node.js ネイティブ アドオンをサポートするためのブリッジとして機能します。追加のコンテキストについては、この<a href="https://github.com/microsoft/vscode/issues/202385#issuecomment-2367174453" target="_blank" rel="noopener">追跡問題</a>を参照してください。</p>
+<p>上位 5000 の拡張機能に影響がないことを確認しました。この変更の影響を受ける拡張機能またはその依存関係がある場合は、次の修正提案を試してください:</p>
+<ul>
+<li>拡張機能が <a href="https://nodejs.org/docs/latest/api/n-api.html" target="_blank" rel="noopener">n-api</a> を使用している場合、外部配列バッファーを使用する場合に <code>napi_no_external_buffers_allowed</code> ステータスが返されます。この場合、API のコピー バージョン <a href="https://nodejs.org/docs/latest/api/n-api.html#napi_create_buffer_copy" target="_blank" rel="noopener">napi_create_buffer_copy</a> を使用するように切り替えることができます。</li>
+<li>拡張機能が <a href="https://github.com/nodejs/node-addon-api" target="_blank" rel="noopener">node-addon-api</a> を使用している場合は、代替 API とコンパイル時設定についてこの<a href="https://github.com/nodejs/node-addon-api/blob/main/doc/external_buffer.md" target="_blank" rel="noopener">ドキュメント</a>を参照してください。</li>
+<li>コピーによるパフォーマンス コストを回避したい場合は、<a href="https://v8.github.io/api/head/classv8_1_1ArrayBuffer_1_1Allocator.html" target="_blank" rel="noopener">V8 アロケーター</a>を使用して、バッファー バッキング ストアが V8 サンドボックスと互換性があることを確認できます。</li>
+</ul>
+<p>影響を受ける可能性のある拡張機能やネイティブ アドオンを特定するためのテレメトリも追加したため、拡張機能の作成者に積極的に連絡を取り、可能な限り支援を提供できます。拡張機能が影響を受けており、上記の提案がどれも機能しない場合は、<a href="https://github.com/microsoft/vscode-discussions/discussions/1771" target="_blank" rel="noopener">ディスカッション スレッド</a>にコメントを残してください。喜んでお手伝いします。</p>
+<h2 id="_46">デバッグ アダプター プロトコル<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h2>
+<p><a href="https://microsoft.github.io/debug-adapter-protocol" target="_blank" rel="noopener">デバッグ アダプター プロトコル</a>の変数と出力の表示でテキストをカラー化およびスタイル設定する方法を正式化しました。カラー化は ANSI 制御シーケンスを介して機能し、クライアントとデバッグ アダプターの両方が初期化リクエストと機能で <code>supportsANSIStyling</code> をサポートする必要があります。</p>
+<h2 id="_47">プレビュー機能<a class="headerlink" href="#_47" title="Permanent link">&para;</a></h2>
+<h3 id="github_1">複数の GitHub アカウント<a class="headerlink" href="#github_1" title="Permanent link">&para;</a></h3>
+<p>VS Code で複数の GitHub アカウントに同時にログインできるようになりました。</p>
+<p>この機能は、VS Code Insiders ではデフォルトで有効になっています。VS Code の安定版ビルドでは、<code>setting(github.experimental.multipleAccounts)</code> 設定をオンにすることで有効にできます。</p>
+<p>複数のアカウントが必要なシナリオの例を次に示します:</p>
+<ul>
+<li><em>Account1</em> を設定同期に使用し、<em>Account2</em> を GitHub プル リクエスト拡張機能に使用する</li>
+<li><em>Account1</em> を GitHub 拡張機能 (プッシュ用) に使用し、<em>Account2</em> を GitHub Copilot に使用する</li>
+</ul>
+<p>この機能を使用するには、(設定同期などの組み込み機能や拡張機能を使用して) ログイン アクションをトリガーし、別のアカウントにログインするオプションが表示されます。この機能は、新しい<a href="#change-an-extensions-account-preference">アカウント優先設定クイック ピック</a>とも相性が良く、後でアカウントを変更する必要がある場合に便利です。</p>
+<p>ほとんどの機能は既存の拡張機能で引き続き動作するはずですが、一部の動作はこのマルチアカウント環境に完全には適合しない場合があります。改善の余地があると思われる場合は、それらの拡張機能に対して問題を報告してください。比較的新しい <code>vscode.authentication.getAccounts('github')</code> API を使用すると、拡張機能は複数のアカウントを処理するための多くの機能を利用できます。</p>
+<p>次のイテレーションでは、この機能をすべてのユーザーにデフォルトで有効にする予定です。</p>
+<h3 id="msal-microsoft">MSAL ベースの Microsoft 認証<a class="headerlink" href="#msal-microsoft" title="Permanent link">&para;</a></h3>
+<p>Microsoft 認証スタックを <a href="http://github.com/AzureAD/microsoft-authentication-library-for-js" target="_blank" rel="noopener">MSAL (Microsoft Authentication Library)</a> を使用するように移行しています。これは大規模な取り組みでしたが、このイテレーションでは大きな進展がありました。この作業は、VS Code と <a href="https://vscode.dev" target="_blank" rel="noopener">VS Code for the Web</a> を含むすべての VS Code クライアントにまたがっています。</p>
+<ul>
+<li>
+<p>vscode.dev では、すべての Microsoft 認証リクエストに対してブラウザー ベースの <code>MSAL.js</code> を有効にしました。言い換えれば、vscode.dev は現在完全に MSAL 上にあります。</p>
+</li>
+<li>
+<p>VS Code (デスクトップ クライアント) では、この機能は設定 <code>setting(microsoft.useMsal)</code> の背後にあります。これは、<a href="https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-node/docs/brokering.md" target="_blank" rel="noopener">ブローカー フロー</a>に移行する予定があるため、現在は設定の背後にあります。これにより、VS Code はオペレーティング システムの認証状態を使用できるようになります。したがって、可能な限り中断を防ぐために、これを広く有効にする前にその作業を行います。ただし、この新しい認証を試してみたい場合は、試してフィードバックを提供することをお勧めします。</p>
+</li>
+</ul>
+<p>VS Code 全体での MSAL への移行の詳細な状況については、<a href="https://github.com/microsoft/vscode/issues/178740" target="_blank" rel="noopener">Issue #178740</a> を参照してください。</p>
+<h3 id="typescript-57">TypeScript 5.7<a class="headerlink" href="#typescript-57" title="Permanent link">&para;</a></h3>
+<p>このリリースには、次期 TypeScript 5.7 リリースの初期サポートが含まれています。詳細については、<a href="https://github.com/microsoft/TypeScript/issues/59905" target="_blank" rel="noopener">TypeScript 5.7 プラン</a> を参照してください。</p>
+<p>TypeScript 5.7 のプレビュー ビルドを使用するには、<a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next" target="_blank" rel="noopener">TypeScript Nightly 拡張機能</a> をインストールします。</p>
+<h2 id="api">提案された API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
+<h3 id="_48">言語モデルのツール<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h3>
+<p><code>LanguageModelTool</code> API のイテレーションを続けています。API には 2 つの主要な部分があります:</p>
+<ol>
+<li>
+<p>*ツール*を登録するための拡張機能の機能。ツールは、言語モデルによって使用されることを目的とした機能の一部です。たとえば、ファイルの Git 履歴を読み取ることができます。</p>
+</li>
+<li>
+<p>言語モデルがツールをサポートするためのメカニズム。たとえば、リクエスト時にツールを渡す拡張機能、ツールの呼び出しを要求する言語モデル、およびツールの呼び出し結果を拡張機能に通知するメカニズムです。</p>
+</li>
+</ol>
+<p>このマイルストーンでは、ツールが実行前にユーザーの確認を要求できる機能を追加しました。これは、副作用がある可能性のあるツールに役立ちます。</p>
+<p>詳細については、<a href="https://github.com/microsoft/vscode/issues/213274" target="_blank" rel="noopener">issue #213274</a> を参照するか、フィードバックを提供してください。</p>
+<blockquote>
+<p><strong>注</strong>: API はまだ開発中であり、変更される可能性があります。</p>
+</blockquote>
+<h2 id="_49">エンジニアリング<a class="headerlink" href="#_49" title="Permanent link">&para;</a></h2>
+<h3 id="esm-is-shipping-for-vs-code">ESM は VS Code 用に出荷されています<a class="headerlink" href="#esm-is-shipping-for-vs-code" title="Permanent link">&para;</a></h3>
+<p>ついに ESM 作業を VS Code 安定版リリースで出荷しています。つまり、VS Code コアのすべてのレイヤー (electron、node.js、ブラウザー、ワーカー) が、モジュールの読み込みとエクスポートのために JavaScript で <code>import</code> および <code>export</code> 構文を使用しています。レガシー AMD ローダーのすべての使用は無効になっており、10 月の債務週の一環として削除されます。</p>
+<p>ESM への移行により、起動パフォーマンスが大幅に向上します。まず、AMD のオーバーヘッドが大幅に削減されますが、メインのワークベンチ バンドル サイズも 10% 以上削減されます:</p>
+<p><img alt="メイン バンドルの読み込み時間の傾向を示すグラフ。ESM の導入後に大幅な低下が見られます。" src="../../assets/external/code.visualstudio.com/assets/updates/1_94/esm.png"></p>
+<p>ESM への完全な移行が完了したため、VS Code のエンジニアリング システムを改善する予定です。ESM を使用すると、多くの最新ツールが私たちのために機能し、近い将来に関する詳細を共有できることを非常に楽しみにしています。</p>
+<blockquote>
+<p><strong>注</strong>: 拡張機能はこの変更の影響を受けず、ESM 経由で読み込まれることはありません。詳細については、<a class="magiclink magiclink-github magiclink-issue" href="https://github.com/microsoft/vscode/issues/130367" title="GitHub Issue: microsoft/vscode #130367" target="_blank" rel="noopener">vscode#130367</a> を参照してください。</p>
+</blockquote>
+<h3 id="npm">デフォルトのパッケージ マネージャーとして NPM を使用する<a class="headerlink" href="#npm" title="Permanent link">&para;</a></h3>
+<p>2024 年 9 月の初めに、<a href="https://github.com/microsoft/vscode" target="_blank" rel="noopener">microsoft/vscode</a> リポジトリのパッケージ管理に yarn から npm への<a href="https://github.com/microsoft/vscode/issues/196795" target="_blank" rel="noopener">切り替えを完了しました</a>。この決定は、VS Code の特定の要件に基づいており、次の基準を中心にしています:</p>
+<ul>
+<li>パフォーマンス: 最初はパフォーマンスの理由で yarn に移行しましたが、npm も要件を満たすことができます</li>
+<li>セキュリティ: 露出を制限し、依存するツールの数を減らすことで、サプライ チェーンをより安全にします</li>
+</ul>
+<h2 id="_50">注目の修正<a class="headerlink" href="#_50" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/microsoft/vscode/issues/226401" target="_blank" rel="noopener">226401</a> fileWatcher が CPU を 200% 以上消費し続ける</li>
+<li><a href="https://github.com/microsoft/vscode-remote-release/issues/10054" target="_blank" rel="noopener">10054</a> [WSL]: <code>localhostForwarding = false</code> の場合、ポート タブが WSL 内のポートがローカルに転送されていると誤って報告する</li>
+</ul>
+<h2 id="_51">ありがとう<a class="headerlink" href="#_51" title="Permanent link">&para;</a></h2>
+<p>最後になりましたが、VS Code の貢献者の皆様に心からの感謝を申し上げます。</p>
+<h3 id="_52">問題追跡<a class="headerlink" href="#_52" title="Permanent link">&para;</a></h3>
+<p>問題追跡への貢献:</p>
+<ul>
+<li><a href="https://github.com/gjsjohnmurray" target="_blank" rel="noopener">@gjsjohnmurray (John Murray)</a></li>
+<li><a href="https://github.com/IllusionMH" target="_blank" rel="noopener">@IllusionMH (Andrii Dieiev)</a></li>
+<li><a href="https://github.com/RedCMD" target="_blank" rel="noopener">@RedCMD (RedCMD)</a></li>
+</ul>
+<h3 id="_53">プルリクエスト<a class="headerlink" href="#_53" title="Permanent link">&para;</a></h3>
+<p><code>vscode</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/BABA983" target="_blank" rel="noopener">@BABA983 (BABA)</a></li>
+<li>ターミナル タブの選択が正しく機能しない問題を修正 <a href="https://github.com/microsoft/vscode/pull/224394" target="_blank" rel="noopener">PR #224394</a></li>
+<li>インポート アクションの折りたたみを登録する <a href="https://github.com/microsoft/vscode/pull/227216" target="_blank" rel="noopener">PR #227216</a></li>
+<li><a href="https://github.com/BlackHole1" target="_blank" rel="noopener">@BlackHole1 (Kevin Cui)</a>: ci: リトライ ロジックの一貫性を確保する <a href="https://github.com/microsoft/vscode/pull/226038" target="_blank" rel="noopener">PR #226038</a></li>
+<li><a href="https://github.com/Cecil0o0" target="_blank" rel="noopener">@Cecil0o0 (hj)</a>: chore: 拡張機能をビルドする際に到達できない無視項目を削除します。 <a href="https://github.com/microsoft/vscode/pull/227906" target="_blank" rel="noopener">PR #227906</a></li>
+<li><a href="https://github.com/dangerman" target="_blank" rel="noopener">@dangerman (Anees Ahee)</a>: 画像プレビューの透明グリッドのスケーリングを修正 <a href="https://github.com/microsoft/vscode/pull/226505" target="_blank" rel="noopener">PR #226505</a></li>
+<li><a href="https://github.com/g-cappai" target="_blank" rel="noopener">@g-cappai (Gianluca Cappai)</a>: Markdown プレビューで HTML アンカー リンクを開く <a href="https://github.com/microsoft/vscode/pull/228633" target="_blank" rel="noopener">PR #228633</a></li>
+<li><a href="https://github.com/gabritto" target="_blank" rel="noopener">@gabritto (Gabriela Araujo Britto)</a>: [typescript-language-features] 展開可能なホバー <a href="https://github.com/microsoft/vscode/pull/228255" target="_blank" rel="noopener">PR #228255</a></li>
+<li><a href="https://github.com/gjsjohnmurray" target="_blank" rel="noopener">@gjsjohnmurray (John Murray)</a></li>
+<li>プレビュー エディター タブのホバーにアクションを追加する <a href="https://github.com/microsoft/vscode/pull/226023" target="_blank" rel="noopener">PR #226023</a></li>
+<li>ワークスペース拡張機能のアクティベーション失敗メッセージのタイプミスを修正 <a href="https://github.com/microsoft/vscode/pull/227348" target="_blank" rel="noopener">PR #227348</a></li>
+<li>ステータス バーのデバッグ パネルのツールチップの大文字を修正 (fix <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/microsoft/vscode-docs/issues/228088" title="GitHub Issue: microsoft/vscode-docs #228088" target="_blank" rel="noopener">#228088</a>) <a href="https://github.com/microsoft/vscode/pull/228089" target="_blank" rel="noopener">PR #228089</a></li>
+<li><a href="https://github.com/henricryden" target="_blank" rel="noopener">@henricryden</a>: check-requirements-linux.sh で libc.so.6 の追加の検索パス <a href="https://github.com/microsoft/vscode/pull/227713" target="_blank" rel="noopener">PR #227713</a></li>
+<li><a href="https://github.com/janssen-tiobe" target="_blank" rel="noopener">@janssen-tiobe (janssen)</a>: 修正: 問題パネルのテーブル ビューでの URI エンコードの過剰 <a href="https://github.com/microsoft/vscode/pull/224841" target="_blank" rel="noopener">PR #224841</a></li>
+<li><a href="https://github.com/jeanp413" target="_blank" rel="noopener">@jeanp413 (Jean Pierre)</a>: 初期ターミナルの寸法がリロード時に正しくない問題を修正 <a href="https://github.com/microsoft/vscode/pull/225554" target="_blank" rel="noopener">PR #225554</a></li>
+<li><a href="https://github.com/jjaeggli" target="_blank" rel="noopener">@jjaeggli (Jacob Jaeggli)</a>: ctrl+alt+space で提案の詳細にフォーカスすることを文書化する <a href="https://github.com/microsoft/vscode/pull/190096" target="_blank" rel="noopener">PR #190096</a></li>
+<li><a href="https://github.com/juliapz" target="_blank" rel="noopener">@juliapz (Julia Pozdeeva)</a>: AUX ウィンドウで検索ウィジェットが切り取られないようにする <a href="https://github.com/microsoft/vscode/pull/229001" target="_blank" rel="noopener">PR #229001</a></li>
+<li><a href="https://github.com/marrej" target="_blank" rel="noopener">@marrej (Marcus Revaj)</a>: # リファクター プレビューでファイルの作成をレンダリングする <a href="https://github.com/microsoft/vscode/pull/226950" target="_blank" rel="noopener">PR #226950</a></li>
+<li><a href="https://github.com/nojaf" target="_blank" rel="noopener">@nojaf (Florian Verdonck)</a></li>
+<li>ノートブックをシリアル化するためのワーカーを使用する <a href="https://github.com/microsoft/vscode/pull/226632" target="_blank" rel="noopener">PR #226632</a></li>
+<li>ErrorNoTelemetry メッセージに id を含める <a href="https://github.com/microsoft/vscode/pull/226715" target="_blank" rel="noopener">PR #226715</a></li>
+<li><a href="https://github.com/PhantomPower82" target="_blank" rel="noopener">@PhantomPower82</a>: はじめにページを磨く (fix <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/microsoft/vscode-docs/issues/226991" title="GitHub Issue: microsoft/vscode-docs #226991" target="_blank" rel="noopener">#226991</a>) <a href="https://github.com/microsoft/vscode/pull/226994" target="_blank" rel="noopener">PR #226994</a></li>
+<li><a href="https://github.com/rafamerlin" target="_blank" rel="noopener">@rafamerlin (Rafael Merlin)</a>: インレイ ヒントの長さを構成可能にする <a href="https://github.com/microsoft/vscode/pull/221276" target="_blank" rel="noopener">PR #221276</a></li>
+<li><a href="https://github.com/rehmsen" target="_blank" rel="noopener">@rehmsen (Ole)</a></li>
+<li><code>setup</code> でテスト変数を初期化して順序依存性を回避します。 <a href="https://github.com/microsoft/vscode/pull/226596" target="_blank" rel="noopener">PR #226596</a></li>
+<li>ノートブック セルごとに複数のコメント ウィジェットをサポートします。 <a href="https://github.com/microsoft/vscode/pull/226770" target="_blank" rel="noopener">PR #226770</a></li>
+<li><a href="https://github.com/remcohaszing" target="_blank" rel="noopener">@remcohaszing (Remco Haszing)</a>: .gitignore に test-results.xml を追加する <a href="https://github.com/microsoft/vscode/pull/214238" target="_blank" rel="noopener">PR #214238</a></li>
+<li><a href="https://github.com/repraze" target="_blank" rel="noopener">@repraze (Thomas Dubosc)</a>: 修正: browser/hover.css で end を flex-end に置き換える <a href="https://github.com/microsoft/vscode/pull/224102" target="_blank" rel="noopener">PR #224102</a></li>
+<li><a href="https://github.com/segevfiner" target="_blank" rel="noopener">@segevfiner (Segev Finer)</a>: カスタム テキスト エディターの拡張ホストの再起動を採用する <a href="https://github.com/microsoft/vscode/pull/225985" target="_blank" rel="noopener">PR #225985</a></li>
+<li><a href="https://github.com/SimonSiefke" target="_blank" rel="noopener">@SimonSiefke (Simon Siefke)</a>: 修正: デバッグ ビューのメモリ リーク <a href="https://github.com/microsoft/vscode/pull/225334" target="_blank" rel="noopener">PR #225334</a></li>
+<li><a href="https://github.com/sunnylost" target="_blank" rel="noopener">@sunnylost (sunnylost)</a>: 拡張機能: テーブル セルの内容を段落要素でラップする <a href="https://github.com/microsoft/vscode/pull/228365" target="_blank" rel="noopener">PR #228365</a></li>
+<li><a href="https://github.com/tisilent" target="_blank" rel="noopener">@tisilent (xiejialong)</a>: エディターの GPU レンダリング フォールバックを追加する <a href="https://github.com/microsoft/vscode/pull/228414" target="_blank" rel="noopener">PR #228414</a></li>
+<li><a href="https://github.com/tmm1" target="_blank" rel="noopener">@tmm1 (Aman Karmani)</a>: macOS で createDirectoryWatcher(~/Library) の tsserver リクエストを無視する <a href="https://github.com/microsoft/vscode/pull/227653" target="_blank" rel="noopener">PR #227653</a></li>
+</ul>
+<p><code>vscode-docs</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/0dinD" target="_blank" rel="noopener">@0dinD (Odin Dahlström)</a>: サポートされている Java バージョンを更新する <a href="https://github.com/microsoft/vscode-docs/pull/7561" target="_blank" rel="noopener">PR #7561</a></li>
+<li><a href="https://github.com/alexwkleung" target="_blank" rel="noopener">@alexwkleung (Alex Leung)</a>: Jupyter サーバー URL の入力スクリーンショットを更新する <a href="https://github.com/microsoft/vscode-docs/pull/7584" target="_blank" rel="noopener">PR #7584</a></li>
+<li><a href="https://github.com/DiskCrasher" target="_blank" rel="noopener">@DiskCrasher (Mike)</a>: コードの欠落している "!" を修正しました <a href="https://github.com/microsoft/vscode-docs/pull/7595" target="_blank" rel="noopener">PR #7595</a></li>
+<li><a href="https://github.com/gaganshera" target="_blank" rel="noopener">@gaganshera (Gaganjot Singh)</a>: prompt-crafting.md を更新する <a href="https://github.com/microsoft/vscode-docs/pull/7555" target="_blank" rel="noopener">PR #7555</a></li>
+<li><a href="https://github.com/harish-s-developer" target="_blank" rel="noopener">@harish-s-developer (Harish Srinivasan)</a>: 新しい依存関係の管理セクションを追加し、1 つのタイプミスを修正しました <a href="https://github.com/microsoft/vscode-docs/pull/7617" target="_blank" rel="noopener">PR #7617</a></li>
+<li><a href="https://github.com/harrydowning" target="_blank" rel="noopener">@harrydowning (Harry Downing)</a>: プレリリース タグに関する誤った記述を削除する <a href="https://github.com/microsoft/vscode-docs/pull/7593" target="_blank" rel="noopener">PR #7593</a></li>
+<li><a href="https://github.com/listsarah" target="_blank" rel="noopener">@listsarah (Sarah Listzwan)</a>: Issue <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/microsoft/vscode-docs/issues/7536" title="GitHub Issue: microsoft/vscode-docs #7536" target="_blank" rel="noopener">#7536</a> を閉じるために: 「埋め込みプログラミング言語」を更新する <a href="https://github.com/microsoft/vscode-docs/pull/7539" target="_blank" rel="noopener">PR #7539</a></li>
+<li><a href="https://github.com/mistymadonna" target="_blank" rel="noopener">@mistymadonna (Misty Hays)</a>: Azure 拡張機能のホームページを更新し、新しいはじめにページを作成しました <a href="https://github.com/microsoft/vscode-docs/pull/7520" target="_blank" rel="noopener">PR #7520</a></li>
+<li><a href="https://github.com/muzimuzhi" target="_blank" rel="noopener">@muzimuzhi (Yukai Chou)</a>: タイプミス、欠落しているインライン コード マークアップを追加する <a href="https://github.com/microsoft/vscode-docs/pull/7589" target="_blank" rel="noopener">PR #7589</a></li>
+<li><a href="https://github.com/partev" target="_blank" rel="noopener">@partev</a>: URL リダイレクトを修正する <a href="https://github.com/microsoft/vscode-docs/pull/7608" target="_blank" rel="noopener">PR #7608</a></li>
+<li><a href="https://github.com/Sarke" target="_blank" rel="noopener">@Sarke (Peter Stalman)</a>: もう 1 つの Flatpak/KDE5 ウォレットの回避策 <a href="https://github.com/microsoft/vscode-docs/pull/7606" target="_blank" rel="noopener">PR #7606</a></li>
+<li><a href="https://github.com/seaniyer" target="_blank" rel="noopener">@seaniyer (Sean)</a>: publishing-extension.md を更新する <a href="https://github.com/microsoft/vscode-docs/pull/7540" target="_blank" rel="noopener">PR #7540</a></li>
+<li><a href="https://github.com/vinistock" target="_blank" rel="noopener">@vinistock (Vinicius Stock)</a>: Ruby リンクを新しいドキュメントにポイントするように更新する <a href="https://github.com/microsoft/vscode-docs/pull/7607" target="_blank" rel="noopener">PR #7607</a></li>
+<li><a href="https://github.com/wjandrea" target="_blank" rel="noopener">@wjandrea (William Andrea)</a></li>
+<li>tasks.md: <code>problemMatcher</code> プロパティに <code>source</code> を追加する <a href="https://github.com/microsoft/vscode-docs/pull/7493" target="_blank" rel="noopener">PR #7493</a></li>
+<li>tasks.md: <code>problemMatcher.severity</code> に言及する <a href="https://github.com/microsoft/vscode-docs/pull/7494" target="_blank" rel="noopener">PR #7494</a></li>
+</ul>
+<p><code>vscode-extension-samples</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/liu3hao" target="_blank" rel="noopener">@liu3hao (Weihao)</a>: 欠落しているアクティベーション イベントを追加する <a href="https://github.com/microsoft/vscode-extension-samples/pull/1057" target="_blank" rel="noopener">PR #1057</a></li>
+</ul>
+<p><code>vscode-js-debug</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/lucacasonato" target="_blank" rel="noopener">@lucacasonato (Luca Casonato)</a>: 修正: Deno で NODE_OPTIONS を挿入しない <a href="https://github.com/microsoft/vscode-js-debug/pull/2080" target="_blank" rel="noopener">PR #2080</a></li>
+</ul>
+<p><code>vscode-jupyter</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/rchiodo" target="_blank" rel="noopener">@rchiodo (Rich Chiodo)</a>: display_name の変更もカーネル変更イベントを引き起こすようにする <a href="https://github.com/microsoft/vscode-jupyter/pull/15967" target="_blank" rel="noopener">PR #15967</a></li>
+</ul>
+<p><code>vscode-languageserver-node</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/StellaHuang95" target="_blank" rel="noopener">@StellaHuang95 (Stella)</a>: <code>CodeAction</code> に <code>llmGenerated</code> プロパティをサポートする <a href="https://github.com/microsoft/vscode-languageserver-node/pull/1557" target="_blank" rel="noopener">PR #1557</a></li>
+</ul>
+<p><code>vscode-pull-request-github</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/ixzhao" target="_blank" rel="noopener">@ixzhao</a>: 引用返信を修正する <a href="https://github.com/microsoft/vscode-pull-request-github/pull/6230" target="_blank" rel="noopener">PR #6230</a></li>
+</ul>
+<p><code>vscode-python-debugger</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/rchiodo" target="_blank" rel="noopener">@rchiodo (Rich Chiodo)</a>: 最新の出荷バージョンに debugpy 情報を更新する <a href="https://github.com/microsoft/vscode-python-debugger/pull/462" target="_blank" rel="noopener">PR #462</a></li>
+</ul>
+<p><code>vscode-vsce</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/mlasson" target="_blank" rel="noopener">@mlasson (Marc Lasson)</a>: オプションのヒントのタイプミスを修正する <a href="https://github.com/microsoft/vscode-vsce/pull/1046" target="_blank" rel="noopener">PR #1046</a></li>
+</ul>
+<p><code>vscode-wasm</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/mlugg" target="_blank" rel="noopener">@mlugg (Matthew Lugg)</a>: ストリームのバグを修正する <a href="https://github.com/microsoft/vscode-wasm/pull/196" target="_blank" rel="noopener">PR #196</a></li>
+</ul>
+<p><code>language-server-protocol</code> への貢献:</p>
+<ul>
+<li><a href="https://github.com/aschaber1" target="_blank" rel="noopener">@aschaber1 (Alexander Schaber)</a>: chore: <code>kubernets</code> から <code>kubernetes</code> へのタイプミスを修正する <a href="https://github.com/microsoft/language-server-protocol/pull/2013" target="_blank" rel="noopener">PR #2013</a></li>
+<li><a href="https://github.com/dawedawe" target="_blank" rel="noopener">@dawedawe (dawe)</a>: CompletionParams のドキュメントのタイプミスを修正する <a href="https://github.com/microsoft/language-server-protocol/pull/2019" target="_blank" rel="noopener">PR #2019</a></li>
+<li><a href="https://github.com/didrikmunther" target="_blank" rel="noopener">@didrikmunther (Didrik Munther)</a>: pullDiagnostics.md のスペルミスを修正する <a href="https://github.com/microsoft/language-server-protocol/pull/2022" target="_blank" rel="noopener">PR #2022</a></li>
+<li><a href="https://github.com/InSyncWithFoo" target="_blank" rel="noopener">@InSyncWithFoo (InSync)</a></li>
+<li><code>percentage</code> のドキュメント コメントのいくつかのタイプミスを修正する <a href="https://github.com/microsoft/language-server-protocol/pull/2010" target="_blank" rel="noopener">PR #2010</a></li>
+<li>Taplo を実装者リストに追加する <a href="https://github.com/microsoft/language-server-protocol/pull/2021" target="_blank" rel="noopener">PR #2021</a></li>
+<li><a href="https://github.com/SamB" target="_blank" rel="noopener">@SamB (Samuel Bronson)</a>: servers.md を更新: vscode-markdown-languageserver が移動しました <a href="https://github.com/microsoft/language-server-protocol/pull/2012" target="_blank" rel="noopener">PR #2012</a></li>
+<li><a href="https://github.com/sh-cho" target="_blank" rel="noopener">@sh-cho (Seonghyeon Cho)</a>: fluent-bit 言語サーバーの実装を追加する <a href="https://github.com/microsoft/language-server-protocol/pull/2016" target="_blank" rel="noopener">PR #2016</a></li>
+<li><a href="https://github.com/StellaHuang95" target="_blank" rel="noopener">@StellaHuang95 (Stella)</a>: <code>CodeAction</code> に <code>llmGenerated</code> プロパティをサポートする <a href="https://github.com/microsoft/language-server-protocol/pull/2020" target="_blank" rel="noopener">PR #2020</a></li>
+</ul>
+<p><a id="scroll-to-top" role="button" title="Scroll to top" aria-label="scroll to top" href="#"><span class="icon"></span></a>
+<link rel="stylesheet" type="text/css" href="css/inproduct_releasenotes.css"/></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "content.action.edit", "content.action.view", "navigation.path"], "search": "../../assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a59f24f2.min.js"></script>
+      
+    
+  </body>
+</html>
