@@ -431,7 +431,7 @@ wheels = [
 
 [[package]]
 name = "mkdocs-material"
-version = "9.5.43"
+version = "9.5.35"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "babel" },
@@ -446,9 +446,9 @@ dependencies = [
     { name = "regex" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0f/81/88039be572a6b063a3ebc99421cf523b56e3560c0baccd7e0c45569469b1/mkdocs_material-9.5.43.tar.gz", hash = "sha256:83be7ff30b65a1e4930dfa4ab911e75780a3afc9583d162692e434581cb46979", size = 3962873 }
+sdist = { url = "https://files.pythonhosted.org/packages/5a/69/e19bc4de98bce00345ecf9d5d6a19178dd121c0d06a121b374ffd27fcac7/mkdocs_material-9.5.35.tar.gz", hash = "sha256:0d233d7db067ac896bf22ee7950eebf2b1eaf26c155bb27382bf4174021cc117", size = 3994310 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6d/22/af8d23818887a39613f821672346776d585c2544938be2561e6e0374cb2d/mkdocs_material-9.5.43-py3-none-any.whl", hash = "sha256:4aae0664c456fd12837a3192e0225c17960ba8bf55d7f0a7daef7e4b0b914a34", size = 8672197 },
+    { url = "https://files.pythonhosted.org/packages/59/6b/84c7cde89fd957461fdbbf6ca02611a4a043d8afbd0bf990aa6a2d0b52c6/mkdocs_material-9.5.35-py3-none-any.whl", hash = "sha256:44e069d87732d29f4a2533ae0748fa0e67e270043270c71f04d0fba11a357b24", size = 8698196 },
 ]
 
 [package.optional-dependencies]
@@ -464,18 +464,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/79/9b/9b4c96d6593b2a541e1cb8b34899a6d021d208bb357042823d4d2cabdbe7/mkdocs_material_extensions-1.3.1.tar.gz", hash = "sha256:10c9511cea88f568257f960358a467d12b970e1f7b2c0e5fb2bb48cab1928443", size = 11847 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5b/54/662a4743aa81d9582ee9339d4ffa3c8fd40a4965e033d77b9da9774d3960/mkdocs_material_extensions-1.3.1-py3-none-any.whl", hash = "sha256:adff8b62700b25cb77b53358dad940f3ef973dd6db797907c49e3c2ef3ab4e31", size = 8728 },
-]
-
-[[package]]
-name = "mkdocs-open-in-new-tab"
-version = "1.0.7"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "mkdocs" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/82/e4/268866f36a86f28d71939f1ae352eb623145f3befa7c52f0ddf0c4777a40/mkdocs_open_in_new_tab-1.0.7.tar.gz", hash = "sha256:8c8bb0bd058d7bfd3ac885802940cf5944de3101492ba765a370cdd2baa754b2", size = 5508 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/f6/38/2abdc52a3bb220cecb2232fcf81eca7de0b1147a18db76fbd29e0481442b/mkdocs_open_in_new_tab-1.0.7-py3-none-any.whl", hash = "sha256:b0271be1aea3f0f33cb558a43692e38400725b147ec74da8410e18c990bbf305", size = 7210 },
 ]
 
 [[package]]
@@ -836,14 +824,12 @@ source = { virtual = "." }
 dependencies = [
     { name = "markdown-callouts" },
     { name = "mkdocs-material", extra = ["imaging"] },
-    { name = "mkdocs-open-in-new-tab" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "markdown-callouts", specifier = ">=0.4.0" },
-    { name = "mkdocs-material", extras = ["imaging"], specifier = ">=9.5.43" },
-    { name = "mkdocs-open-in-new-tab", specifier = ">=1.0.7" },
+    { name = "mkdocs-material", extras = ["imaging"], specifier = "==9.5.35" },
 ]
 
 [[package]]

@@ -17,4 +17,11 @@ jobs:
       - uses: astral-sh/setup-uv@v3
         with:
           enable-cache: true
-      - run: uv run mkdocs gh-deploy --force
+      - run: apt-get install pngquant
+      - name: mkdocs gh-deploy
+        run: |
+          gh auth setup-git
+          uv run --with "git+$MKDOCS_MATERIAL_INSIDERS_GIT_URL" mkdocs gh-deploy --force
+        env:
+          GH_TOKEN: ${{ secrets.MKDOCS_MATERIAL_INSIDERS_TOKEN }}
+          MKDOCS_MATERIAL_INSIDERS_GIT_URL: ${{ vars.MKDOCS_MATERIAL_INSIDERS_GIT_URL }}
