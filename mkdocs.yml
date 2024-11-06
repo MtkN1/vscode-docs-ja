@@ -11,6 +11,7 @@ theme:
     - navigation.tabs.sticky
     - content.action.edit
     - content.action.view
+    - navigation.path
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -85,4 +86,6 @@ plugins:
   - social:
       cards_layout_options:
         font_family: Noto Sans JP
-  - open-in-new-tab:
+  - privacy:
+      links_attr_map:
+        target: _blank
