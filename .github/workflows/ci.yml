@@ -3,25 +3,42 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - uses: astral-sh/setup-uv@v3
+      - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
       - run: apt-get install pngquant
-      - name: mkdocs gh-deploy
+      - name: mkdocs build
         run: |
           gh auth setup-git
-          uv run --with "git+$MKDOCS_MATERIAL_INSIDERS_GIT_URL" mkdocs gh-deploy --force
+          uv run --with "git+$MKDOCS_MATERIAL_INSIDERS_GIT_URL" mkdocs build --strict
         env:
           GH_TOKEN: ${{ secrets.MKDOCS_MATERIAL_INSIDERS_TOKEN }}
           MKDOCS_MATERIAL_INSIDERS_GIT_URL: ${{ vars.MKDOCS_MATERIAL_INSIDERS_GIT_URL }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    permissions:
+      id-token: write
+      pages: write
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4
