@@ -17,7 +17,7 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
-      - run: apt-get install pngquant
+      - run: sudo apt-get install pngquant
       - name: mkdocs build
         run: |
           gh auth setup-git
