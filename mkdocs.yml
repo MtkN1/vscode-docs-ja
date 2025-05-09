@@ -3,6 +3,16 @@ site_url: https://mtkn1.github.io/vscode-docs-ja/
 repo_url: https://github.com/MtkN1/vscode-docs-ja
 repo_name: MtkN1/vscode-docs-ja
 edit_uri: edit/main/docs/
+nav:
+  - Home: index.md
+  - Release notes:
+    - release-notes/v1_100.md
+    - release-notes/v1_99.md
+    - release-notes/v1_98.md
+    - release-notes/v1_97.md
+    - release-notes/v1_96.md
+    - release-notes/v1_95.md
+    - release-notes/v1_94.md
 theme:
   name: material
   language: ja

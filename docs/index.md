@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # vscode-docs-ja
 
 このサイトは第三者が VS Code ドキュメント (https://code.visualstudio.com/docs) を日本語に翻訳したものです。
