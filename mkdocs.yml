@@ -92,6 +92,9 @@ markdown_extensions:
   # markdown-callouts
   - github-callouts
 
+  # Mdx Truly Sane Lists
+  - mdx_truly_sane_lists:
+
 plugins:
   - search
   - social:
