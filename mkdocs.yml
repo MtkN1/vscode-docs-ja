@@ -6,6 +6,7 @@ edit_uri: edit/main/docs/
 nav:
   - Home: index.md
   - Release notes:
+    - release-notes/v1_107.md
     - release-notes/v1_106.md
     - release-notes/v1_105.md
     - release-notes/v1_104.md
